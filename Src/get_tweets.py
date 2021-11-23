@@ -35,8 +35,8 @@ def main():
     # TODO change to credentials instead of fake_credentials
     credentials_path = '../data/fake_credentials.json'
     credentials_dict = read_json(credentials_path)
-    api = get_twitter_client(credentials_dict)
-    api_tweets = get_api_tweets()
+    client = get_twitter_client(credentials_dict)
+    api_tweets = get_api_tweets(client)
 
 
 
