@@ -37,6 +37,14 @@
             "quote_count": 0
         },
         "entities": {
+            "mentions": [
+                {
+                    "start": 206,
+                    "end": 220,
+                    "username": "gatewaypundit",
+                    "id": "19211550"
+                }
+            ],
             "urls": [
                 {
                     "start": 178,
@@ -44,14 +52,6 @@
                     "url": "https://t.co/54cBYmRAg2",
                     "expanded_url": "https://www.thegatewaypundit.com/2021/11/attorney-releases-first-pages-subpoenaed-fda-files-shows-pfizer-documented-158893-adverse-events-25957-nervous-system-disorders/?utm_source=Twitter&utm_medium=PostTopSharingButtons&utm_campaign=websitesharingbuttons",
                     "display_url": "thegatewaypundit.com/2021/11/attorn\u2026"
-                }
-            ],
-            "mentions": [
-                {
-                    "start": 206,
-                    "end": 220,
-                    "username": "gatewaypundit",
-                    "id": "19211550"
                 }
             ]
         }
@@ -70,6 +70,14 @@
             "quote_count": 0
         },
         "entities": {
+            "mentions": [
+                {
+                    "start": 103,
+                    "end": 111,
+                    "username": "YouTube",
+                    "id": "10228272"
+                }
+            ],
             "urls": [
                 {
                     "start": 75,
@@ -86,14 +94,6 @@
                     "probability": 0.946,
                     "type": "Person",
                     "normalized_text": "Dr. Robert Malone"
-                }
-            ],
-            "mentions": [
-                {
-                    "start": 103,
-                    "end": 111,
-                    "username": "YouTube",
-                    "id": "10228272"
                 }
             ]
         }
@@ -337,7 +337,23 @@
                     "end": 213,
                     "url": "https://t.co/DfEbrE86rH",
                     "expanded_url": "https://www.reuters.com/world/europe/around-35000-protest-against-covid-restrictions-brussels-police-say-2021-11-21/",
-                    "display_url": "reuters.com/world/europe/a\u2026"
+                    "display_url": "reuters.com/world/europe/a\u2026",
+                    "images": [
+                        {
+                            "url": "https://pbs.twimg.com/news_img/1462497467891470337/hK2kKXR0?format=jpg&name=orig",
+                            "width": 1200,
+                            "height": 628
+                        },
+                        {
+                            "url": "https://pbs.twimg.com/news_img/1462497467891470337/hK2kKXR0?format=jpg&name=150x150",
+                            "width": 150,
+                            "height": 150
+                        }
+                    ],
+                    "status": 200,
+                    "title": "Around 35,000 protest against COVID restrictions in Brussels, police say",
+                    "description": "Around 35,000 people took to the streets in Brussels on Sunday to protest against restrictions imposed by the government in the fight against the COVID-19 pandemic, police said.",
+                    "unwound_url": "https://www.reuters.com/world/europe/around-35000-protest-against-covid-restrictions-brussels-police-say-2021-11-21/"
                 }
             ],
             "annotations": [
@@ -368,7 +384,7 @@
         "public_metrics": {
             "retweet_count": 6,
             "reply_count": 3,
-            "like_count": 29,
+            "like_count": 28,
             "quote_count": 1
         },
         "entities": {
@@ -481,6 +497,3457 @@
                     "probability": 0.3672,
                     "type": "Organization",
                     "normalized_text": "Pfizer"
+                }
+            ]
+        }
+    },
+    "1462571468596957191": {
+        "text": "106 1D1F are currently in operation creating 156,782 direct and indirect jobs even in the midst of COVID where the world's economies have been badly affected. Well done Mr President @NAkufoAddo. Ghanaians can't afford to let NPP go to opposition. That will be a bad decision! https://t.co/pDXjH8Sx5M",
+        "username": "AGB07003591",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:46+00:00",
+        "user_location": null,
+        "id": 1462571468596957191,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 182,
+                    "end": 193,
+                    "username": "NAkufoAddo",
+                    "id": "247217109"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 276,
+                    "end": 299,
+                    "url": "https://t.co/pDXjH8Sx5M",
+                    "expanded_url": "https://twitter.com/AGB07003591/status/1462571468596957191/photo/1",
+                    "display_url": "pic.twitter.com/pDXjH8Sx5M"
+                }
+            ]
+        }
+    },
+    "1462571464054480897": {
+        "text": "Heaven Is for Real Vaccine Shedding https://t.co/FfyKUchSqd",
+        "username": "todd_holloman",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:44+00:00",
+        "user_location": "Paducah, KY",
+        "id": 1462571464054480897,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 3,
+            "like_count": 4,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 36,
+                    "end": 59,
+                    "url": "https://t.co/FfyKUchSqd",
+                    "expanded_url": "https://twitter.com/badvaccinetakes/status/1462490557155102722",
+                    "display_url": "twitter.com/badvaccinetake\u2026"
+                }
+            ]
+        }
+    },
+    "1462571462854852612": {
+        "text": "If you need an expedited route to rock bottom: end a loving relationship relationship and then catch covid further isolating you from everyone.",
+        "username": "__loading__ish",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:44+00:00",
+        "user_location": null,
+        "id": 1462571462854852612,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 3,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": null
+    },
+    "1462571457683275787": {
+        "text": "2021-11-21 Potential exposures to COVID-19 at two locations in Northern Zone\nPrecaution Notification: 1 location (Oxford)\nExposure Notification: 1 location (YMCA of Cumberland)\nhttps://t.co/pNxJQTu6Ti https://t.co/p0iM4RXapw",
+        "username": "REMO_KingsCty",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:43+00:00",
+        "user_location": "Wolfville, Nova Scotia",
+        "id": 1462571457683275787,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 177,
+                    "end": 200,
+                    "url": "https://t.co/pNxJQTu6Ti",
+                    "expanded_url": "http://www.nshealth.ca/news/potential-exposures-covid-19-two-locations-northern-zone",
+                    "display_url": "nshealth.ca/news/potential\u2026"
+                },
+                {
+                    "start": 201,
+                    "end": 224,
+                    "url": "https://t.co/p0iM4RXapw",
+                    "expanded_url": "https://twitter.com/REMO_KingsCty/status/1462571457683275787/photo/1",
+                    "display_url": "pic.twitter.com/p0iM4RXapw"
+                },
+                {
+                    "start": 201,
+                    "end": 224,
+                    "url": "https://t.co/p0iM4RXapw",
+                    "expanded_url": "https://twitter.com/REMO_KingsCty/status/1462571457683275787/photo/1",
+                    "display_url": "pic.twitter.com/p0iM4RXapw"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 165,
+                    "end": 174,
+                    "probability": 0.3516,
+                    "type": "Place",
+                    "normalized_text": "Cumberland"
+                }
+            ]
+        }
+    },
+    "1462571457205129220": {
+        "text": "I NeVer took the FLU shot...I NeVer Got the FLU, Why am I beinG Forced to inJect this Covid Vaccine, Get a Booster eVery 6 months and stiLL wear a Mask. LET PPL MAKE THEIR OWN CHOICES @JoeBiden",
+        "username": "RaReBreedSweet1",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:43+00:00",
+        "user_location": null,
+        "id": 1462571457205129220,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 184,
+                    "end": 193,
+                    "username": "JoeBiden",
+                    "id": "939091"
+                }
+            ]
+        }
+    },
+    "1462571451546947584": {
+        "text": "Do you people understand what a vaccine is???? It\u2019s not perfect but it is very effective in preventing a virus. Do the damn research",
+        "username": "sillyman40",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:41+00:00",
+        "user_location": "Dallas",
+        "id": 1462571451546947584,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": null
+    },
+    "1462571449173037059": {
+        "text": "France Sends Police Forces to Guadeloupe Amid COVID\u00a0Riots https://t.co/o9UU0R4oJR",
+        "username": "AcerboLivio",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:41+00:00",
+        "user_location": "Nice, France",
+        "id": 1462571449173037059,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 58,
+                    "end": 81,
+                    "url": "https://t.co/o9UU0R4oJR",
+                    "expanded_url": "https://www.greenground.it/2021/11/22/france-sends-police-forces-to-guadeloupe-amid-covid-riots/",
+                    "display_url": "greenground.it/2021/11/22/fra\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 5,
+                    "probability": 0.9381,
+                    "type": "Place",
+                    "normalized_text": "France"
+                },
+                {
+                    "start": 30,
+                    "end": 39,
+                    "probability": 0.6407,
+                    "type": "Place",
+                    "normalized_text": "Guadeloupe"
+                }
+            ]
+        }
+    },
+    "1462571440830623749": {
+        "text": "Prisoner\u2019s early release over COVID-19 fears is reversed\n(via @AP)\n\nhttps://t.co/Kl1jNt1p1o",
+        "username": "FAMMFoundation",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:39+00:00",
+        "user_location": "Washington, DC",
+        "id": 1462571440830623749,
+        "public_metrics": {
+            "retweet_count": 1,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 62,
+                    "end": 65,
+                    "username": "AP",
+                    "id": "51241574"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 68,
+                    "end": 91,
+                    "url": "https://t.co/Kl1jNt1p1o",
+                    "expanded_url": "https://apnews.com/article/coronavirus-pandemic-health-crime-michigan-detroit-ecb4905f6f37d232b11c956ec6fa7d2b",
+                    "display_url": "apnews.com/article/corona\u2026"
+                }
+            ]
+        }
+    },
+    "1462571436535685125": {
+        "text": "I find that this works. Lately, I'd been catching the variant that causes symptomless infections, 19 times daily, and when I crouch down, stay lower, I now catch COVID-19 only 4 times daily as opposed to 19 times daily. https://t.co/ywRogMROEx",
+        "username": "christarpher72",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:38+00:00",
+        "user_location": "I was young and naive, sorry.",
+        "id": 1462571436535685125,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 220,
+                    "end": 243,
+                    "url": "https://t.co/ywRogMROEx",
+                    "expanded_url": "https://twitter.com/covid_parent/status/1462569105735798792",
+                    "display_url": "twitter.com/covid_parent/s\u2026"
+                }
+            ]
+        }
+    },
+    "1462571432563642376": {
+        "text": "Here's an idea everyone, just don't go to Walt Disney World in Florida if that piece-of-shit Ron DeSantis won't let them take the necessary steps to keep you and your family safe from an unnecessary COVID-19 infection. \u2013\u2013 How's that for a plan? Economic impact is a great weapon! https://t.co/Wd01WzSD5p",
+        "username": "BodyCnts",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:37+00:00",
+        "user_location": null,
+        "id": 1462571432563642376,
+        "public_metrics": {
+            "retweet_count": 2,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 280,
+                    "end": 303,
+                    "url": "https://t.co/Wd01WzSD5p",
+                    "expanded_url": "https://twitter.com/washingtonpost/status/1462443958911516685",
+                    "display_url": "twitter.com/washingtonpost\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 42,
+                    "end": 58,
+                    "probability": 0.362,
+                    "type": "Other",
+                    "normalized_text": "Walt Disney World"
+                },
+                {
+                    "start": 63,
+                    "end": 69,
+                    "probability": 0.9993,
+                    "type": "Place",
+                    "normalized_text": "Florida"
+                },
+                {
+                    "start": 93,
+                    "end": 104,
+                    "probability": 0.9931,
+                    "type": "Person",
+                    "normalized_text": "Ron DeSantis"
+                }
+            ]
+        }
+    },
+    "1462571429946437643": {
+        "text": "France Sends Police Forces to Guadeloupe Amid COVID\u00a0Riots https://t.co/bCupQ2sqbe",
+        "username": "ColoHeadlines",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:36+00:00",
+        "user_location": null,
+        "id": 1462571429946437643,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 58,
+                    "end": 81,
+                    "url": "https://t.co/bCupQ2sqbe",
+                    "expanded_url": "https://northdenvernews.com/france-sends-police-forces-to-guadeloupe-amid-covid-riots/",
+                    "display_url": "northdenvernews.com/france-sends-p\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 5,
+                    "probability": 0.9381,
+                    "type": "Place",
+                    "normalized_text": "France"
+                },
+                {
+                    "start": 30,
+                    "end": 39,
+                    "probability": 0.6407,
+                    "type": "Place",
+                    "normalized_text": "Guadeloupe"
+                }
+            ]
+        }
+    },
+    "1462571422816030724": {
+        "text": "France Sends Police Forces to Guadeloupe Amid COVID\u00a0Riots https://t.co/gMFoTUmxG8",
+        "username": "CherryCreekNews",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:35+00:00",
+        "user_location": "Cherry Creek, Denver, CO",
+        "id": 1462571422816030724,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 58,
+                    "end": 81,
+                    "url": "https://t.co/gMFoTUmxG8",
+                    "expanded_url": "https://northdenvernews.com/france-sends-police-forces-to-guadeloupe-amid-covid-riots/",
+                    "display_url": "northdenvernews.com/france-sends-p\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 5,
+                    "probability": 0.9381,
+                    "type": "Place",
+                    "normalized_text": "France"
+                },
+                {
+                    "start": 30,
+                    "end": 39,
+                    "probability": 0.6407,
+                    "type": "Place",
+                    "normalized_text": "Guadeloupe"
+                }
+            ]
+        }
+    },
+    "1462571416293892102": {
+        "text": "France Sends Police Forces to Guadeloupe Amid COVID\u00a0Riots https://t.co/orMnw26h2A",
+        "username": "GuerinGreen",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:33+00:00",
+        "user_location": "Denver",
+        "id": 1462571416293892102,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 58,
+                    "end": 81,
+                    "url": "https://t.co/orMnw26h2A",
+                    "expanded_url": "https://northdenvernews.com/france-sends-police-forces-to-guadeloupe-amid-covid-riots/",
+                    "display_url": "northdenvernews.com/france-sends-p\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 5,
+                    "probability": 0.9381,
+                    "type": "Place",
+                    "normalized_text": "France"
+                },
+                {
+                    "start": 30,
+                    "end": 39,
+                    "probability": 0.6407,
+                    "type": "Place",
+                    "normalized_text": "Guadeloupe"
+                }
+            ]
+        }
+    },
+    "1462571411722100740": {
+        "text": "Violent backlash to tighter rules erupts after new wave of virus spreads at \u2018lightning speed\u2019 on the Continent.\n\n\ud83d\udd13 This article is currently free to read \ud83d\udc47 https://t.co/3BVgL2YgqT",
+        "username": "Telegraph",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:32+00:00",
+        "user_location": "London, UK",
+        "id": 1462571411722100740,
+        "public_metrics": {
+            "retweet_count": 12,
+            "reply_count": 9,
+            "like_count": 24,
+            "quote_count": 3
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 156,
+                    "end": 179,
+                    "url": "https://t.co/3BVgL2YgqT",
+                    "expanded_url": "https://www.telegraph.co.uk/world-news/2021/11/21/rage-across-europe-covid-resrictions-trigger-riots/?utm_content=telegraph&utm_medium=Social&utm_campaign=Echobox&utm_source=Twitter#Echobox=1637539172-1",
+                    "display_url": "telegraph.co.uk/world-news/202\u2026"
+                }
+            ]
+        }
+    },
+    "1462571411503865859": {
+        "text": "Hi @ABCFactCheck, @SenatorRennick claimed in senate that Pfizer has redacted trial data in relation to their Covid-19 vaccine. How accurate is this claim?",
+        "username": "Sarah_Alice_X",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:32+00:00",
+        "user_location": "Sydney-ish",
+        "id": 1462571411503865859,
+        "public_metrics": {
+            "retweet_count": 1,
+            "reply_count": 2,
+            "like_count": 6,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 3,
+                    "end": 16,
+                    "username": "ABCFactCheck",
+                    "id": "1412036527"
+                },
+                {
+                    "start": 18,
+                    "end": 33,
+                    "username": "SenatorRennick",
+                    "id": "1068013130033201152"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 57,
+                    "end": 62,
+                    "probability": 0.7949,
+                    "type": "Organization",
+                    "normalized_text": "Pfizer"
+                }
+            ]
+        }
+    },
+    "1462571409251586048": {
+        "text": "Target mid Dec https://t.co/2ptQBaq80M",
+        "username": "superyachtbuzz",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:31+00:00",
+        "user_location": "Singapore",
+        "id": 1462571409251586048,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 15,
+                    "end": 38,
+                    "url": "https://t.co/2ptQBaq80M",
+                    "expanded_url": "https://www.theguardian.com/australia-news/datablog/ng-interactive/2021/nov/15/covid-19-vaccine-rollout-australia-vaccination-rate-progress-how-many-people-vaccinated-percent-tracker-australian-states-number-total-daily-live-data-stats-updates-news-schedule-tracking-chart-percentage-new-cases-today",
+                    "display_url": "theguardian.com/australia-news\u2026"
+                }
+            ]
+        }
+    },
+    "1462571400980574208": {
+        "text": "France Sends Police Forces to Guadeloupe Amid COVID Riots https://t.co/PPiq0ijah6",
+        "username": "online_khobor",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:29+00:00",
+        "user_location": "West Bengal",
+        "id": 1462571400980574208,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 58,
+                    "end": 81,
+                    "url": "https://t.co/PPiq0ijah6",
+                    "expanded_url": "https://ift.tt/3xdEkph",
+                    "display_url": "ift.tt/3xdEkph"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 5,
+                    "probability": 0.9381,
+                    "type": "Place",
+                    "normalized_text": "France"
+                },
+                {
+                    "start": 30,
+                    "end": 39,
+                    "probability": 0.6407,
+                    "type": "Place",
+                    "normalized_text": "Guadeloupe"
+                }
+            ]
+        }
+    },
+    "1462571389429428224": {
+        "text": "I hate to say this, because I'm completely on Allison's side here, but she also doesn't understand that a mass testing regime for COVID guarantees you will be able to see rising seasonal waves of a likely already endemic virus.\n\nThere will be a wave, every year, forever. https://t.co/r5dmYgQxbT",
+        "username": "AdamLocke76",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:27+00:00",
+        "user_location": null,
+        "id": 1462571389429428224,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 272,
+                    "end": 295,
+                    "url": "https://t.co/r5dmYgQxbT",
+                    "expanded_url": "https://twitter.com/AllisonPearson/status/1462554828916367369",
+                    "display_url": "twitter.com/AllisonPearson\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 46,
+                    "end": 52,
+                    "probability": 0.848,
+                    "type": "Person",
+                    "normalized_text": "Allison"
+                }
+            ]
+        }
+    },
+    "1462571387609092107": {
+        "text": "Fauci on who should get Covid-19 booster\u00a0shots https://t.co/T67Eodv6jc",
+        "username": "TheChestnutPost",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:26+00:00",
+        "user_location": "Washington, DC",
+        "id": 1462571387609092107,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 47,
+                    "end": 70,
+                    "url": "https://t.co/T67Eodv6jc",
+                    "expanded_url": "https://www.thechestnutpost.com/news/fauci-on-who-should-get-covid-19-booster-shots/",
+                    "display_url": "thechestnutpost.com/news/fauci-on-\u2026"
+                }
+            ]
+        }
+    },
+    "1462571385629388807": {
+        "text": "Europeans Protest as Surging COVID Cases Prompt Tighter Curbs https://t.co/Fvvs7bMfNS",
+        "username": "online_khobor",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:26+00:00",
+        "user_location": "West Bengal",
+        "id": 1462571385629388807,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 62,
+                    "end": 85,
+                    "url": "https://t.co/Fvvs7bMfNS",
+                    "expanded_url": "https://ift.tt/3kXfNjg",
+                    "display_url": "ift.tt/3kXfNjg"
+                }
+            ]
+        }
+    },
+    "1462571370622042112": {
+        "text": "Is there a Covid presser today or is it only next week? #CovidNZ",
+        "username": "solangefrancois",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:22+00:00",
+        "user_location": "New Zealand",
+        "id": 1462571370622042112,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 4,
+            "quote_count": 0
+        },
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 56,
+                    "end": 64,
+                    "tag": "CovidNZ"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 11,
+                    "end": 15,
+                    "probability": 0.3117,
+                    "type": "Person",
+                    "normalized_text": "Covid"
+                }
+            ]
+        }
+    },
+    "1462571370601234435": {
+        "text": "#AUSTRIA joins the worldwide resistance movement against vaccine mandates. The people are rising up against nationwide lockdown of the entire population beginning tomorrow and universal compulsory vaccination beginning February.\n#NoVaccineMandates #FREEDOM https://t.co/ga9WRs84pW",
+        "username": "margaretxwinter",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:22+00:00",
+        "user_location": null,
+        "id": 1462571370601234435,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 0,
+                    "end": 8,
+                    "tag": "AUSTRIA"
+                },
+                {
+                    "start": 229,
+                    "end": 247,
+                    "tag": "NoVaccineMandates"
+                },
+                {
+                    "start": 248,
+                    "end": 256,
+                    "tag": "FREEDOM"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 257,
+                    "end": 280,
+                    "url": "https://t.co/ga9WRs84pW",
+                    "expanded_url": "https://twitter.com/AnonymeCitoyen/status/1462459506319888384",
+                    "display_url": "twitter.com/AnonymeCitoyen\u2026"
+                }
+            ]
+        }
+    },
+    "1462571368310919169": {
+        "text": "28 detained in Netherlands as protests against Covid norms enter second night: Report -India News\u00a0Cart https://t.co/hivyayptfK",
+        "username": "IndiaNewsCart1",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:22+00:00",
+        "user_location": null,
+        "id": 1462571368310919169,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 103,
+                    "end": 126,
+                    "url": "https://t.co/hivyayptfK",
+                    "expanded_url": "https://indianewscart.com/28-detained-in-netherlands-as-protests-against-covid-norms-enter-second-night-report-india-news-cart/",
+                    "display_url": "indianewscart.com/28-detained-in\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 15,
+                    "end": 25,
+                    "probability": 0.9987,
+                    "type": "Place",
+                    "normalized_text": "Netherlands"
+                },
+                {
+                    "start": 47,
+                    "end": 51,
+                    "probability": 0.3709,
+                    "type": "Organization",
+                    "normalized_text": "Covid"
+                },
+                {
+                    "start": 87,
+                    "end": 101,
+                    "probability": 0.351,
+                    "type": "Organization",
+                    "normalized_text": "India News\u00a0Cart"
+                }
+            ]
+        }
+    },
+    "1462571365966356481": {
+        "text": "ALSO IT'S THEIR 5TH YEAR THERE SO CAN WE FCUKIN GET RID OF THE \"FAVORITE FOOD AND DREAM COLLAB\" QUESTIONS. \nCOVID CHANGED THE WORLD WHY IS IT SO HARD TO CHANGE YOUR FCUKIN QUESTIONS? \n#AMAs",
+        "username": "agustddecafe",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:21+00:00",
+        "user_location": null,
+        "id": 1462571365966356481,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 184,
+                    "end": 189,
+                    "tag": "AMAs"
+                }
+            ]
+        }
+    },
+    "1462571361612832769": {
+        "text": "2 doses of Covid vaccination elicits a weak antibody response in people taking the immunosuppressants known as TNF inhibitors\u2014a class of drugs used to treat rheumatoid arthritis and other autoimmune conditions https://t.co/2D5jv1AsEO https://t.co/Wu4JAuzwmC",
+        "username": "DelthiaRicks",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:20+00:00",
+        "user_location": "New York",
+        "id": 1462571361612832769,
+        "public_metrics": {
+            "retweet_count": 15,
+            "reply_count": 1,
+            "like_count": 12,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 210,
+                    "end": 233,
+                    "url": "https://t.co/2D5jv1AsEO",
+                    "expanded_url": "https://medicalxpress.com/news/2021-11-covid-vaccine-elicits-weak-antibody.html",
+                    "display_url": "medicalxpress.com/news/2021-11-c\u2026"
+                },
+                {
+                    "start": 234,
+                    "end": 257,
+                    "url": "https://t.co/Wu4JAuzwmC",
+                    "expanded_url": "https://twitter.com/DelthiaRicks/status/1462571361612832769/photo/1",
+                    "display_url": "pic.twitter.com/Wu4JAuzwmC"
+                }
+            ]
+        }
+    },
+    "1462571358479699973": {
+        "text": "The COVID-19 Children\u2019s Vaccine Crusade\u00a0 \u201cIn a sane era, no ethics review board would allow doctors to bribe young children to undergo a treatment with unknown dangers,\u201d\nhttps://t.co/8CMFR0iVNY",
+        "username": "andrewbostom",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:19+00:00",
+        "user_location": null,
+        "id": 1462571358479699973,
+        "public_metrics": {
+            "retweet_count": 90,
+            "reply_count": 3,
+            "like_count": 204,
+            "quote_count": 6
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 170,
+                    "end": 193,
+                    "url": "https://t.co/8CMFR0iVNY",
+                    "expanded_url": "https://www.city-journal.org/the-covid-childrens-crusade",
+                    "display_url": "city-journal.org/the-covid-chil\u2026"
+                }
+            ]
+        }
+    },
+    "1462571358370635777": {
+        "text": "of course I would get exposed to covid and get sick and now my mom and my roommate don't want me at school when I really freaking need to be there so I can learn. literally hate it here.",
+        "username": "ashmarie423",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:19+00:00",
+        "user_location": null,
+        "id": 1462571358370635777,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": null
+    },
+    "1462571354239160322": {
+        "text": "Is 37 too old to run away and join the circus? NOT looking forward to covid holiday season round 2 at work \ud83d\ude15 https://t.co/P1yNYBDpHV",
+        "username": "AndijoTheRRT",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:18+00:00",
+        "user_location": null,
+        "id": 1462571354239160322,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 2,
+            "like_count": 11,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 109,
+                    "end": 132,
+                    "url": "https://t.co/P1yNYBDpHV",
+                    "expanded_url": "https://twitter.com/AndijoTheRRT/status/1462571354239160322/photo/1",
+                    "display_url": "pic.twitter.com/P1yNYBDpHV"
+                }
+            ]
+        }
+    },
+    "1462571354096652289": {
+        "text": "A recent study that claims to have found hundreds of samples from Iowa deer infected with COVID-19 has financial links to manufacturers of COVID-19 vaccines.\n\nhttps://t.co/JAimd8bwQK https://t.co/m9oqHx4kfw",
+        "username": "axcessnews",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:18+00:00",
+        "user_location": "Nevada",
+        "id": 1462571354096652289,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 159,
+                    "end": 182,
+                    "url": "https://t.co/JAimd8bwQK",
+                    "expanded_url": "https://axcessnews.com/science/research/covid-in-iowa-deer-study-linked-to-vaccine-industry_16832/",
+                    "display_url": "axcessnews.com/science/resear\u2026"
+                },
+                {
+                    "start": 183,
+                    "end": 206,
+                    "url": "https://t.co/m9oqHx4kfw",
+                    "expanded_url": "https://twitter.com/axcessnews/status/1462571354096652289/photo/1",
+                    "display_url": "pic.twitter.com/m9oqHx4kfw"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 66,
+                    "end": 69,
+                    "probability": 0.7388,
+                    "type": "Place",
+                    "normalized_text": "Iowa"
+                },
+                {
+                    "start": 90,
+                    "end": 97,
+                    "probability": 0.3575,
+                    "type": "Organization",
+                    "normalized_text": "COVID-19"
+                }
+            ]
+        }
+    },
+    "1462571353031294985": {
+        "text": "Violent protests break out in Europe over vaccine mandates, lockdowns https://t.co/I5Q29WYZqh via @nypost",
+        "username": "cupcardriver",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:18+00:00",
+        "user_location": "Lost in Amerika",
+        "id": 1462571353031294985,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 98,
+                    "end": 105,
+                    "username": "nypost",
+                    "id": "17469289"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 70,
+                    "end": 93,
+                    "url": "https://t.co/I5Q29WYZqh",
+                    "expanded_url": "https://nypost.com/2021/11/21/europes-covid-19-vaccine-mandates-spark-violent-protests/?utm_source=twitter_sitebuttons&utm_medium=site%20buttons&utm_campaign=site%20buttons",
+                    "display_url": "nypost.com/2021/11/21/eur\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 30,
+                    "end": 35,
+                    "probability": 0.9945,
+                    "type": "Place",
+                    "normalized_text": "Europe"
+                }
+            ]
+        }
+    },
+    "1462571351684751362": {
+        "text": "An Admission from a Dr who refers to vaccine genocide \ud83d\udc47 https://t.co/z8Kq0IAd4M",
+        "username": "Ethnerose",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:18+00:00",
+        "user_location": null,
+        "id": 1462571351684751362,
+        "public_metrics": {
+            "retweet_count": 1,
+            "reply_count": 0,
+            "like_count": 4,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 56,
+                    "end": 79,
+                    "url": "https://t.co/z8Kq0IAd4M",
+                    "expanded_url": "https://twitter.com/TurekAndrew/status/1462303200812298241",
+                    "display_url": "twitter.com/TurekAndrew/st\u2026"
+                }
+            ]
+        }
+    },
+    "1462571351089287175": {
+        "text": "GREAT NEWS: Disney, one of Florida\u2019s biggest employers, announced on Saturday it would no longer insist cast members be vaccinated, after Governor Ron DeSantis signed sweeping legislation on Thursday countermanding Biden\u2019s order. https://t.co/ztKLEu28w2",
+        "username": "JDShuttlesworth",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:18+00:00",
+        "user_location": "Pittsburgh, PA USA",
+        "id": 1462571351089287175,
+        "public_metrics": {
+            "retweet_count": 23,
+            "reply_count": 8,
+            "like_count": 98,
+            "quote_count": 1
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 230,
+                    "end": 253,
+                    "url": "https://t.co/ztKLEu28w2",
+                    "expanded_url": "https://www.forbes.com/sites/lisakim/2021/11/20/disney-world-halts-employee-covid-vaccine-mandate-after-florida-ban/",
+                    "display_url": "forbes.com/sites/lisakim/\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 12,
+                    "end": 17,
+                    "probability": 0.6336,
+                    "type": "Organization",
+                    "normalized_text": "Disney"
+                },
+                {
+                    "start": 27,
+                    "end": 33,
+                    "probability": 0.878,
+                    "type": "Place",
+                    "normalized_text": "Florida"
+                },
+                {
+                    "start": 138,
+                    "end": 158,
+                    "probability": 0.5023,
+                    "type": "Person",
+                    "normalized_text": "Governor Ron DeSantis"
+                },
+                {
+                    "start": 215,
+                    "end": 219,
+                    "probability": 0.9204,
+                    "type": "Person",
+                    "normalized_text": "Biden"
+                }
+            ]
+        }
+    },
+    "1462571350917271558": {
+        "text": "Laughing hard at this  https://t.co/Fkc3LoSKRN",
+        "username": "iambatmandoug",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:17+00:00",
+        "user_location": "Lincoln, NE",
+        "id": 1462571350917271558,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 23,
+                    "end": 46,
+                    "url": "https://t.co/Fkc3LoSKRN",
+                    "expanded_url": "https://www.rt.com/news/540909-biontech-ceo-vaccine-booster-shot/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email",
+                    "display_url": "rt.com/news/540909-bi\u2026"
+                }
+            ]
+        }
+    },
+    "1462571342415503365": {
+        "text": "Stunning breakdown, easy to understand.  Must Share Fast!!  Explains how the vax causes your body to attack itself. https://t.co/dygMxUkGPu",
+        "username": "spaceboy909",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:15+00:00",
+        "user_location": "Columbia, Missouri, USA",
+        "id": 1462571342415503365,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 116,
+                    "end": 139,
+                    "url": "https://t.co/dygMxUkGPu",
+                    "expanded_url": "https://twitter.com/Kukicat7/status/1462551265079009286",
+                    "display_url": "twitter.com/Kukicat7/statu\u2026"
+                }
+            ]
+        }
+    },
+    "1462571339240280065": {
+        "text": "Least favorite part of my ride?\n\nBiking by a sad little anti vaccine mandate protest. (I appreciated that another woman told them to \"eat shit.\")\n\nFavorite part of my ride? This view: https://t.co/nVSLckz2Cj",
+        "username": "nosoupforgeorge",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:15+00:00",
+        "user_location": "Occupied Ohlone Territory",
+        "id": 1462571339240280065,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 3,
+            "like_count": 57,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 184,
+                    "end": 207,
+                    "url": "https://t.co/nVSLckz2Cj",
+                    "expanded_url": "https://twitter.com/nosoupforgeorge/status/1462571339240280065/photo/1",
+                    "display_url": "pic.twitter.com/nVSLckz2Cj"
+                }
+            ]
+        }
+    },
+    "1462571335838801928": {
+        "text": "Dr. Fauci warns time running short to prevent \u2018dangerous\u2019 Covid surge in US https://t.co/Oh6xojy92M via @Yahoo",
+        "username": "GPBGeorge",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:14+00:00",
+        "user_location": null,
+        "id": 1462571335838801928,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 104,
+                    "end": 110,
+                    "username": "Yahoo",
+                    "id": "19380829"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 76,
+                    "end": 99,
+                    "url": "https://t.co/Oh6xojy92M",
+                    "expanded_url": "https://news.yahoo.com/fauci-warns-time-running-short-170755179.html?soc_src=social-sh&soc_trk=tw&tsrc=twtr",
+                    "display_url": "news.yahoo.com/fauci-warns-ti\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 8,
+                    "probability": 0.9599,
+                    "type": "Person",
+                    "normalized_text": "Dr. Fauci"
+                },
+                {
+                    "start": 73,
+                    "end": 74,
+                    "probability": 0.9755,
+                    "type": "Place",
+                    "normalized_text": "US"
+                }
+            ]
+        }
+    },
+    "1462571334714671113": {
+        "text": "UK to probe racial bias in medical devices after COVID toll - ABC News https://t.co/w2izBkQ89t",
+        "username": "renissance_1",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:14+00:00",
+        "user_location": "United States",
+        "id": 1462571334714671113,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 71,
+                    "end": 94,
+                    "url": "https://t.co/w2izBkQ89t",
+                    "expanded_url": "https://abcnews.go.com/Health/wireStory/uk-probe-racial-bias-medical-devices-covid-toll-81311138",
+                    "display_url": "abcnews.go.com/Health/wireSto\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 1,
+                    "probability": 0.8935,
+                    "type": "Place",
+                    "normalized_text": "UK"
+                },
+                {
+                    "start": 62,
+                    "end": 69,
+                    "probability": 0.8857,
+                    "type": "Organization",
+                    "normalized_text": "ABC News"
+                }
+            ]
+        }
+    },
+    "1462571334060236808": {
+        "text": "Australia politics live update: Albanese says PM \u2018responsible\u2019 for not condemning protesters\u2019 violent threats; 1,029 Covid cases in Victoria https://t.co/MIbq1CO2VC",
+        "username": "fehowarth",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:13+00:00",
+        "user_location": "Central Coast NSW",
+        "id": 1462571334060236808,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 141,
+                    "end": 164,
+                    "url": "https://t.co/MIbq1CO2VC",
+                    "expanded_url": "https://www.theguardian.com/australia-news/live/2021/nov/22/australia-politics-parliament-covid-nt-nsw-act-morrison-legislation-vaccination-election-victoria-pandemic-perrottet-andrews?CMP=share_btn_tw&page=with:block-619ad6648f081cbfdcd0db7e#block-619ad6648f081cbfdcd0db7e",
+                    "display_url": "theguardian.com/australia-news\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 8,
+                    "probability": 0.9419,
+                    "type": "Place",
+                    "normalized_text": "Australia"
+                },
+                {
+                    "start": 32,
+                    "end": 39,
+                    "probability": 0.8347,
+                    "type": "Person",
+                    "normalized_text": "Albanese"
+                },
+                {
+                    "start": 132,
+                    "end": 139,
+                    "probability": 0.7452,
+                    "type": "Place",
+                    "normalized_text": "Victoria"
+                }
+            ]
+        }
+    },
+    "1462571332349181952": {
+        "text": "Attorney Shared First Pages From Subpoenaed FDA Files! Pfizer Has 158.893 Side Effects, 25.957 Nervous System Disorders!!! https://t.co/fZDTbJTqTh",
+        "username": "kiem1642",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:13+00:00",
+        "user_location": null,
+        "id": 1462571332349181952,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 123,
+                    "end": 146,
+                    "url": "https://t.co/fZDTbJTqTh",
+                    "expanded_url": "https://thetruedefender.com/attorney-shared-first-pages-from-subpoenaed-fda-files-pfizer-has-158-893-side-effects-25-957-nervous-system-disorders/",
+                    "display_url": "thetruedefender.com/attorney-share\u2026"
+                }
+            ]
+        }
+    },
+    "1462571330952253443": {
+        "text": "Once your awake , you can never go back to sleep! #Covid #Corruption #AuspolSoCorrupt",
+        "username": "RickMiarse",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:13+00:00",
+        "user_location": "Australia",
+        "id": 1462571330952253443,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 50,
+                    "end": 56,
+                    "tag": "Covid"
+                },
+                {
+                    "start": 57,
+                    "end": 68,
+                    "tag": "Corruption"
+                },
+                {
+                    "start": 69,
+                    "end": 85,
+                    "tag": "AuspolSoCorrupt"
+                }
+            ]
+        }
+    },
+    "1462571325289947140": {
+        "text": "Coronavirus was created by Israel and it pm Benjamin Netanyahu was to wipeout, eliminate palestine and Gaza 2014/15. Toronto, US Military, FBI, Washington DC, police, NWO, NYPD, FBI, AstraZeneca, Pfizer, TDSB, Children vaccines, UK, US State Dept, China, Russia, Tory, Del Duca, https://t.co/gAUGN651Q2",
+        "username": "homelesman",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:11+00:00",
+        "user_location": null,
+        "id": 1462571325289947140,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 279,
+                    "end": 302,
+                    "url": "https://t.co/gAUGN651Q2",
+                    "expanded_url": "https://twitter.com/homelesman/status/1462571325289947140/video/1",
+                    "display_url": "pic.twitter.com/gAUGN651Q2"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 10,
+                    "probability": 0.3842,
+                    "type": "Person",
+                    "normalized_text": "Coronavirus"
+                },
+                {
+                    "start": 27,
+                    "end": 32,
+                    "probability": 0.9125,
+                    "type": "Place",
+                    "normalized_text": "Israel"
+                },
+                {
+                    "start": 44,
+                    "end": 61,
+                    "probability": 0.9841,
+                    "type": "Person",
+                    "normalized_text": "Benjamin Netanyahu"
+                },
+                {
+                    "start": 103,
+                    "end": 106,
+                    "probability": 0.9592,
+                    "type": "Place",
+                    "normalized_text": "Gaza"
+                },
+                {
+                    "start": 117,
+                    "end": 123,
+                    "probability": 0.9864,
+                    "type": "Place",
+                    "normalized_text": "Toronto"
+                },
+                {
+                    "start": 126,
+                    "end": 136,
+                    "probability": 0.581,
+                    "type": "Organization",
+                    "normalized_text": "US Military"
+                },
+                {
+                    "start": 139,
+                    "end": 141,
+                    "probability": 0.9592,
+                    "type": "Organization",
+                    "normalized_text": "FBI"
+                },
+                {
+                    "start": 144,
+                    "end": 156,
+                    "probability": 0.5939,
+                    "type": "Place",
+                    "normalized_text": "Washington DC"
+                },
+                {
+                    "start": 167,
+                    "end": 169,
+                    "probability": 0.7195,
+                    "type": "Organization",
+                    "normalized_text": "NWO"
+                },
+                {
+                    "start": 172,
+                    "end": 175,
+                    "probability": 0.8412,
+                    "type": "Organization",
+                    "normalized_text": "NYPD"
+                },
+                {
+                    "start": 178,
+                    "end": 180,
+                    "probability": 0.9926,
+                    "type": "Organization",
+                    "normalized_text": "FBI"
+                },
+                {
+                    "start": 183,
+                    "end": 193,
+                    "probability": 0.7041,
+                    "type": "Organization",
+                    "normalized_text": "AstraZeneca"
+                },
+                {
+                    "start": 196,
+                    "end": 201,
+                    "probability": 0.5977,
+                    "type": "Organization",
+                    "normalized_text": "Pfizer"
+                },
+                {
+                    "start": 229,
+                    "end": 230,
+                    "probability": 0.9746,
+                    "type": "Place",
+                    "normalized_text": "UK"
+                },
+                {
+                    "start": 233,
+                    "end": 245,
+                    "probability": 0.7696,
+                    "type": "Organization",
+                    "normalized_text": "US State Dept"
+                },
+                {
+                    "start": 248,
+                    "end": 252,
+                    "probability": 0.9479,
+                    "type": "Place",
+                    "normalized_text": "China"
+                },
+                {
+                    "start": 255,
+                    "end": 260,
+                    "probability": 0.9075,
+                    "type": "Place",
+                    "normalized_text": "Russia"
+                },
+                {
+                    "start": 269,
+                    "end": 276,
+                    "probability": 0.2707,
+                    "type": "Place",
+                    "normalized_text": "Del Duca"
+                }
+            ]
+        }
+    },
+    "1462571300455469058": {
+        "text": "VIDEO: Johnson &amp; Johnson Vision official discusses product launches, community efforts: NEW ORLEANS \u2014 In this Healio Video Perspective from the Eyecelerator meeting, Warren Foust, worldwide president of surgical vision at J&amp;J Vision, discusses recent IOL\u2026 https://t.co/PBEC8B5jYG",
+        "username": "SophiaDevetzi",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:05+00:00",
+        "user_location": null,
+        "id": 1462571300455469058,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 264,
+                    "end": 287,
+                    "url": "https://t.co/PBEC8B5jYG",
+                    "expanded_url": "https://bit.ly/3FvNG2C",
+                    "display_url": "bit.ly/3FvNG2C"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 7,
+                    "end": 13,
+                    "probability": 0.7177,
+                    "type": "Person",
+                    "normalized_text": "Johnson"
+                },
+                {
+                    "start": 17,
+                    "end": 30,
+                    "probability": 0.5286,
+                    "type": "Person",
+                    "normalized_text": "Johnson Vision"
+                },
+                {
+                    "start": 88,
+                    "end": 98,
+                    "probability": 0.4384,
+                    "type": "Place",
+                    "normalized_text": "NEW ORLEANS"
+                },
+                {
+                    "start": 166,
+                    "end": 177,
+                    "probability": 0.7227,
+                    "type": "Person",
+                    "normalized_text": "Warren Foust"
+                },
+                {
+                    "start": 222,
+                    "end": 231,
+                    "probability": 0.4466,
+                    "type": "Organization",
+                    "normalized_text": "J&J Vision"
+                }
+            ]
+        }
+    },
+    "1462571294143258625": {
+        "text": "Vermont Department of Health supports vaccination for older Vermonters https://t.co/pZNic5e5al",
+        "username": "banner_news",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:04+00:00",
+        "user_location": "Bennington, VT",
+        "id": 1462571294143258625,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 71,
+                    "end": 94,
+                    "url": "https://t.co/pZNic5e5al",
+                    "expanded_url": "https://www.benningtonbanner.com/community-news/vermont-department-of-health-supports-vaccination-for-older-vermonters/article_d61044cc-498a-11ec-a44f-47c76b277fbf.html?utm_term=Autofeed&utm_medium=Social&utm_source=Twitter#Echobox=1637532783",
+                    "display_url": "benningtonbanner.com/community-news\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 27,
+                    "probability": 0.7087,
+                    "type": "Organization",
+                    "normalized_text": "Vermont Department of Health"
+                }
+            ]
+        }
+    },
+    "1462571292628946945": {
+        "text": "F.D.A. Authorizes Coronavirus Booster Shots for All Adults: If the C.D.C. agrees, adults who received a second shot of the Pfizer or Moderna vaccine at least six months ago could be eligible by this weekend. https://t.co/exNUupCwFw",
+        "username": "SophiaDevetzi",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:04+00:00",
+        "user_location": null,
+        "id": 1462571292628946945,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 208,
+                    "end": 231,
+                    "url": "https://t.co/exNUupCwFw",
+                    "expanded_url": "https://bit.ly/3x7CEh4",
+                    "display_url": "bit.ly/3x7CEh4"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 123,
+                    "end": 128,
+                    "probability": 0.6174,
+                    "type": "Organization",
+                    "normalized_text": "Pfizer"
+                }
+            ]
+        }
+    },
+    "1462571289642606596": {
+        "text": "A Texas attorney general  and Sen. Rand Paul files lawsuit against Anthony Fauci over Covid Virus Creation https://t.co/JxAk14HWrb via @ourschoolgist",
+        "username": "RalphieSusie",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:03+00:00",
+        "user_location": null,
+        "id": 1462571289642606596,
+        "public_metrics": {
+            "retweet_count": 1,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 135,
+                    "end": 149,
+                    "username": "Ourschoolgist",
+                    "id": "1707719754"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 107,
+                    "end": 130,
+                    "url": "https://t.co/JxAk14HWrb",
+                    "expanded_url": "https://wp.me/pdcPKG-3q",
+                    "display_url": "wp.me/pdcPKG-3q"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 2,
+                    "end": 6,
+                    "probability": 0.6903,
+                    "type": "Place",
+                    "normalized_text": "Texas"
+                },
+                {
+                    "start": 30,
+                    "end": 43,
+                    "probability": 0.899,
+                    "type": "Person",
+                    "normalized_text": "Sen. Rand Paul"
+                },
+                {
+                    "start": 67,
+                    "end": 79,
+                    "probability": 0.9673,
+                    "type": "Person",
+                    "normalized_text": "Anthony Fauci"
+                },
+                {
+                    "start": 86,
+                    "end": 105,
+                    "probability": 0.2874,
+                    "type": "Organization",
+                    "normalized_text": "Covid Virus Creation"
+                }
+            ]
+        }
+    },
+    "1462571289483231233": {
+        "text": "Fresh protests, violence against Covid restrictions https://t.co/eOxPPIKJ8o",
+        "username": "TodoTiempo",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:03+00:00",
+        "user_location": "San Juan PR",
+        "id": 1462571289483231233,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 52,
+                    "end": 75,
+                    "url": "https://t.co/eOxPPIKJ8o",
+                    "expanded_url": "http://dlvr.it/SCxRLL",
+                    "display_url": "dlvr.it/SCxRLL"
+                }
+            ]
+        }
+    },
+    "1462571283640639489": {
+        "text": "3 sri lanka players test positive for covid 19 in womens cricket world cup\u00a0qualifier https://t.co/Jp6a3rMzto",
+        "username": "rohannsharma",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:01+00:00",
+        "user_location": null,
+        "id": 1462571283640639489,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 85,
+                    "end": 108,
+                    "url": "https://t.co/Jp6a3rMzto",
+                    "expanded_url": "https://samachar-news.com/3-sri-lanka-players-test-positive-for-covid-19-in-womens-cricket-world-cup-qualifier/149127/",
+                    "display_url": "samachar-news.com/3-sri-lanka-pl\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 2,
+                    "end": 10,
+                    "probability": 0.3374,
+                    "type": "Organization",
+                    "normalized_text": "sri lanka"
+                }
+            ]
+        }
+    },
+    "1462571281841364998": {
+        "text": "I'm heading off twitter tonight. I will watch a dystopian movie or two - at least in fiction, there is a happy ending.\nwhile for real live drama\n\"Covid19 Vaccine Passports - your permit to live on earth coming to bureaucrat near your\"\nHappy ending is not guaranteed.",
+        "username": "evasmagacz",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:01+00:00",
+        "user_location": "London",
+        "id": 1462571281841364998,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": {
+            "annotations": [
+                {
+                    "start": 16,
+                    "end": 22,
+                    "probability": 0.5266,
+                    "type": "Product",
+                    "normalized_text": "twitter"
+                }
+            ]
+        }
+    },
+    "1462571277495975936": {
+        "text": "Town Hall Scheduled for Parents of Children Aged 5-11 Who Are Eligible for COVID Shot https://t.co/vUh2Qkhh44",
+        "username": "TheRiver105",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:00+00:00",
+        "user_location": "Niagara, Ontario",
+        "id": 1462571277495975936,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 86,
+                    "end": 109,
+                    "url": "https://t.co/vUh2Qkhh44",
+                    "expanded_url": "https://www.105theriver.ca/news/local-news/town-hall-scheduled-for-parents-of-children-aged-5-11-who-are-eligible-for-covid-shot/",
+                    "display_url": "105theriver.ca/news/local-new\u2026"
+                }
+            ]
+        }
+    },
+    "1462571276439113736": {
+        "text": "Letters: Pharmaceutical companies must invent new antibiotics \u2013 or it will be worse than Covid https://t.co/1QrKKmUfQK",
+        "username": "IndyVoices",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:00+00:00",
+        "user_location": null,
+        "id": 1462571276439113736,
+        "public_metrics": {
+            "retweet_count": 1,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 95,
+                    "end": 118,
+                    "url": "https://t.co/1QrKKmUfQK",
+                    "expanded_url": "https://www.independent.co.uk/voices/letters/antibiotics-covid-pharmaceutical-companies-b1961405.html",
+                    "display_url": "independent.co.uk/voices/letters\u2026"
+                }
+            ]
+        }
+    },
+    "1462571276405518336": {
+        "text": "A UK ICU doctor on the COVID vaccines: \"It may not stop you from catching Covid. But it can save your life when you do.\" https://t.co/9huLtXxYxn",
+        "username": "rachelclun",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:00+00:00",
+        "user_location": "Canberra, ACT",
+        "id": 1462571276405518336,
+        "public_metrics": {
+            "retweet_count": 1,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 121,
+                    "end": 144,
+                    "url": "https://t.co/9huLtXxYxn",
+                    "expanded_url": "https://www.theguardian.com/world/2021/nov/21/icu-is-full-of-the-unvaccinated-my-patience-with-them-is-wearing-thin",
+                    "display_url": "theguardian.com/world/2021/nov\u2026"
+                }
+            ]
+        }
+    },
+    "1462571271938625542": {
+        "text": "Booked my Moderna booster, my flu shot, and my windshield replacement. Guess break won\u2019t be all relaxing.",
+        "username": "lastrainforest",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:59+00:00",
+        "user_location": "Houston, TX",
+        "id": 1462571271938625542,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 2,
+            "like_count": 6,
+            "quote_count": 0
+        },
+        "entities": null
+    },
+    "1462571265554731010": {
+        "text": "A video that is well worth watching. Says a lot about the current thinking about Covid and peoples vaccine status. Watch till the very end. It\u2019s not about health, it\u2019s all about feelings. https://t.co/PKVVKy94Ka @voices_nz @viewspotnz @SRhoireiphapos @wakeupfromcovid",
+        "username": "Brenda12_7_2",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:57+00:00",
+        "user_location": null,
+        "id": 1462571265554731010,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 212,
+                    "end": 222,
+                    "username": "voices_nz",
+                    "id": "1336893733959155718"
+                },
+                {
+                    "start": 223,
+                    "end": 234,
+                    "username": "viewspotnz",
+                    "id": "1262307733295861760"
+                },
+                {
+                    "start": 235,
+                    "end": 250,
+                    "username": "SRhoireiphapos",
+                    "id": "1438796813876744192"
+                },
+                {
+                    "start": 251,
+                    "end": 267,
+                    "username": "wakeupfromcovid",
+                    "id": "1326232391493496833"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 188,
+                    "end": 211,
+                    "url": "https://t.co/PKVVKy94Ka",
+                    "expanded_url": "https://m.youtube.com/watch?v=y9io1MZz_7E",
+                    "display_url": "m.youtube.com/watch?v=y9io1M\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 81,
+                    "end": 85,
+                    "probability": 0.4772,
+                    "type": "Person",
+                    "normalized_text": "Covid"
+                }
+            ]
+        }
+    },
+    "1462571257870884865": {
+        "text": "Okay, this cold is definitely worse than (double vaxxed) covid was. Someone knock me out.",
+        "username": "nimbus_nought",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:55+00:00",
+        "user_location": null,
+        "id": 1462571257870884865,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": null
+    },
+    "1462571254658052097": {
+        "text": "3 sri lanka players test positive for covid 19 in womens cricket world cup\u00a0qualifier https://t.co/p4T1hCGJFw",
+        "username": "samacharnews_in",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:55+00:00",
+        "user_location": null,
+        "id": 1462571254658052097,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 85,
+                    "end": 108,
+                    "url": "https://t.co/p4T1hCGJFw",
+                    "expanded_url": "https://samachar-news.com/3-sri-lanka-players-test-positive-for-covid-19-in-womens-cricket-world-cup-qualifier/149127/",
+                    "display_url": "samachar-news.com/3-sri-lanka-pl\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 2,
+                    "end": 10,
+                    "probability": 0.3374,
+                    "type": "Organization",
+                    "normalized_text": "sri lanka"
+                }
+            ]
+        }
+    },
+    "1462571247552720896": {
+        "text": "Vigilance must be maintained- masking, vaccination, social distancing, testing, tracing. NSW records 180 new COVID-19 cases, one death https://t.co/eM06JkXz30 via @dailyliberal",
+        "username": "Taracamb",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:53+00:00",
+        "user_location": null,
+        "id": 1462571247552720896,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 163,
+                    "end": 176,
+                    "username": "dailyliberal",
+                    "id": "115267792"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 135,
+                    "end": 158,
+                    "url": "https://t.co/eM06JkXz30",
+                    "expanded_url": "https://www.dailyliberal.com.au/story/7519536/nsw-records-180-new-covid-19-cases-one-death/",
+                    "display_url": "dailyliberal.com.au/story/7519536/\u2026"
+                }
+            ]
+        }
+    },
+    "1462571245996675072": {
+        "text": "It's all one crisis. The crisis is that those who rule us don't think it should be a priority to make sure everyone has what they need to live. #opioids #ClimateCrisis #bcfloods #COVIDisAirborne #Wetsuweten #pipeline #canpoli #bcpoli #nurse #Covid",
+        "username": "geoffberner",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:52+00:00",
+        "user_location": null,
+        "id": 1462571245996675072,
+        "public_metrics": {
+            "retweet_count": 10,
+            "reply_count": 0,
+            "like_count": 27,
+            "quote_count": 0
+        },
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 144,
+                    "end": 152,
+                    "tag": "opioids"
+                },
+                {
+                    "start": 153,
+                    "end": 167,
+                    "tag": "ClimateCrisis"
+                },
+                {
+                    "start": 168,
+                    "end": 177,
+                    "tag": "bcfloods"
+                },
+                {
+                    "start": 178,
+                    "end": 194,
+                    "tag": "COVIDisAirborne"
+                },
+                {
+                    "start": 195,
+                    "end": 206,
+                    "tag": "Wetsuweten"
+                },
+                {
+                    "start": 207,
+                    "end": 216,
+                    "tag": "pipeline"
+                },
+                {
+                    "start": 217,
+                    "end": 225,
+                    "tag": "canpoli"
+                },
+                {
+                    "start": 226,
+                    "end": 233,
+                    "tag": "bcpoli"
+                },
+                {
+                    "start": 234,
+                    "end": 240,
+                    "tag": "nurse"
+                },
+                {
+                    "start": 241,
+                    "end": 247,
+                    "tag": "Covid"
+                }
+            ]
+        }
+    },
+    "1462571242918223876": {
+        "text": "the revolution will not be televised.\n\nThe world RISES against covid mandates. \n#RESIST \u270a\ud83c\udffd\n\nCollage:  \nhttps://t.co/NWciKQcWxp",
+        "username": "MaajidNawaz",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:52+00:00",
+        "user_location": "London",
+        "id": 1462571242918223876,
+        "public_metrics": {
+            "retweet_count": 414,
+            "reply_count": 20,
+            "like_count": 1225,
+            "quote_count": 16
+        },
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 80,
+                    "end": 87,
+                    "tag": "RESIST"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 103,
+                    "end": 126,
+                    "url": "https://t.co/NWciKQcWxp",
+                    "expanded_url": "https://twitter.com/Kukicat7/status/1462510188129308682/video/1",
+                    "display_url": "pic.twitter.com/NWciKQcWxp"
+                }
+            ]
+        }
+    },
+    "1462571242867892228": {
+        "text": "Violent protests break out in Europe over vaccine mandates, lockdowns https://t.co/x9IBspBO37 via @nypost",
+        "username": "matrixxremix",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:52+00:00",
+        "user_location": "Everywhere ",
+        "id": 1462571242867892228,
+        "public_metrics": {
+            "retweet_count": 1,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 98,
+                    "end": 105,
+                    "username": "nypost",
+                    "id": "17469289"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 70,
+                    "end": 93,
+                    "url": "https://t.co/x9IBspBO37",
+                    "expanded_url": "https://nypost.com/2021/11/21/europes-covid-19-vaccine-mandates-spark-violent-protests/?utm_source=twitter_sitebuttons&utm_medium=site%20buttons&utm_campaign=site%20buttons",
+                    "display_url": "nypost.com/2021/11/21/eur\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 30,
+                    "end": 35,
+                    "probability": 0.9945,
+                    "type": "Place",
+                    "normalized_text": "Europe"
+                }
+            ]
+        }
+    },
+    "1462571237604040706": {
+        "text": "Fauci warns time running short to prevent \u2018dangerous\u2019 Covid surge in US https://t.co/Oh6xojy92M via @Yahoo",
+        "username": "GPBGeorge",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:50+00:00",
+        "user_location": null,
+        "id": 1462571237604040706,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 100,
+                    "end": 106,
+                    "username": "Yahoo",
+                    "id": "19380829"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 72,
+                    "end": 95,
+                    "url": "https://t.co/Oh6xojy92M",
+                    "expanded_url": "https://news.yahoo.com/fauci-warns-time-running-short-170755179.html?soc_src=social-sh&soc_trk=tw&tsrc=twtr",
+                    "display_url": "news.yahoo.com/fauci-warns-ti\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 69,
+                    "end": 70,
+                    "probability": 0.9744,
+                    "type": "Place",
+                    "normalized_text": "US"
+                }
+            ]
+        }
+    },
+    "1462571237234913284": {
+        "text": "Wtf is in this vaccine?! its been 10 hours and I feel like someone hammered the shit out of my arm. \ud83d\udd28 \ud83d\udc89 hurts like hell.",
+        "username": "public_enemy_A1",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:50+00:00",
+        "user_location": null,
+        "id": 1462571237234913284,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": null
+    },
+    "1462571236110704644": {
+        "text": "Pfizer, BioNTech and Moderna are making combined profits of more than $1,000 every second - https://t.co/32nmk1az8A\n#breakingnews #news #newsdesk #newsline https://t.co/nPQd9QENn5",
+        "username": "readnewsdesk",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:50+00:00",
+        "user_location": "Everywhere ",
+        "id": 1462571236110704644,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 116,
+                    "end": 129,
+                    "tag": "breakingnews"
+                },
+                {
+                    "start": 130,
+                    "end": 135,
+                    "tag": "news"
+                },
+                {
+                    "start": 136,
+                    "end": 145,
+                    "tag": "newsdesk"
+                },
+                {
+                    "start": 146,
+                    "end": 155,
+                    "tag": "newsline"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 92,
+                    "end": 115,
+                    "url": "https://t.co/32nmk1az8A",
+                    "expanded_url": "https://www.newsdesk.io/pfizer-biontech-and-moderna-are-making-combined-profits-of-more-than-1000-every-second/",
+                    "display_url": "newsdesk.io/pfizer-biontec\u2026"
+                },
+                {
+                    "start": 156,
+                    "end": 179,
+                    "url": "https://t.co/nPQd9QENn5",
+                    "expanded_url": "https://twitter.com/readnewsdesk/status/1462571236110704644/photo/1",
+                    "display_url": "pic.twitter.com/nPQd9QENn5"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 5,
+                    "probability": 0.7699,
+                    "type": "Organization",
+                    "normalized_text": "Pfizer"
+                },
+                {
+                    "start": 8,
+                    "end": 15,
+                    "probability": 0.5823,
+                    "type": "Organization",
+                    "normalized_text": "BioNTech"
+                },
+                {
+                    "start": 21,
+                    "end": 27,
+                    "probability": 0.7664,
+                    "type": "Organization",
+                    "normalized_text": "Moderna"
+                }
+            ]
+        }
+    },
+    "1462571234265219073": {
+        "text": "I don't want to be a KJ but please, please, please, let BTS be safe from catching COVID 19nor any cold virus from the crowd. The handshaking and going around without masks give me anxiety. #BTS_Butter #BTS_MyUniverse #BTSxAMAs",
+        "username": "GdpWw2",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:50+00:00",
+        "user_location": null,
+        "id": 1462571234265219073,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 189,
+                    "end": 200,
+                    "tag": "BTS_Butter"
+                },
+                {
+                    "start": 201,
+                    "end": 216,
+                    "tag": "BTS_MyUniverse"
+                },
+                {
+                    "start": 217,
+                    "end": 226,
+                    "tag": "BTSxAMAs"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 56,
+                    "end": 58,
+                    "probability": 0.5395,
+                    "type": "Organization",
+                    "normalized_text": "BTS"
+                }
+            ]
+        }
+    },
+    "1462571233992593408": {
+        "text": "NSW COVID: Sydney lockdown restriction consistency urged by Kerry Chant, emails reveal. Cracker story by \u2066@LucyCormack\u2069 \u2066@AlexSmithSMH\u2069  https://t.co/Fth0Op2Ae2",
+        "username": "jamesmassola",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:50+00:00",
+        "user_location": "Canberra, ACT",
+        "id": 1462571233992593408,
+        "public_metrics": {
+            "retweet_count": 4,
+            "reply_count": 1,
+            "like_count": 8,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 106,
+                    "end": 118,
+                    "username": "LucyCormack",
+                    "id": "265149184"
+                },
+                {
+                    "start": 121,
+                    "end": 134,
+                    "username": "AlexSmithSMH",
+                    "id": "159426974"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 137,
+                    "end": 160,
+                    "url": "https://t.co/Fth0Op2Ae2",
+                    "expanded_url": "https://www.smh.com.au/politics/nsw/kerry-chant-urged-consistent-lockdown-restrictions-across-all-of-sydney-emails-reveal-20211121-p59aq4.html",
+                    "display_url": "smh.com.au/politics/nsw/k\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 11,
+                    "end": 16,
+                    "probability": 0.8647,
+                    "type": "Place",
+                    "normalized_text": "Sydney"
+                },
+                {
+                    "start": 60,
+                    "end": 70,
+                    "probability": 0.3528,
+                    "type": "Person",
+                    "normalized_text": "Kerry Chant"
+                }
+            ]
+        }
+    },
+    "1462571224157069320": {
+        "text": "Between this, murderer K R walking free and horribly mismanaged COVID, I don't when I will ever feel safe visiting the US again. https://t.co/SfeUQ1lkqU",
+        "username": "Hitchy_",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:47+00:00",
+        "user_location": "Canada",
+        "id": 1462571224157069320,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 2,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 129,
+                    "end": 152,
+                    "url": "https://t.co/SfeUQ1lkqU",
+                    "expanded_url": "https://twitter.com/cnnbrk/status/1462549697462157318",
+                    "display_url": "twitter.com/cnnbrk/status/\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 119,
+                    "end": 120,
+                    "probability": 0.8947,
+                    "type": "Place",
+                    "normalized_text": "US"
+                }
+            ]
+        }
+    },
+    "1462571220482736130": {
+        "text": "Attorney Releases First Pages from Subpoenaed FDA Files - Shows Pfizer Documented 158,893 Adverse Events with 25,957 Nervous System Disorders in First Few Months of Distribution https://t.co/uTJb8NcRvx via @gatewaypundit",
+        "username": "knup9876",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:46+00:00",
+        "user_location": null,
+        "id": 1462571220482736130,
+        "public_metrics": {
+            "retweet_count": 1,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 206,
+                    "end": 220,
+                    "username": "gatewaypundit",
+                    "id": "19211550"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 178,
+                    "end": 201,
+                    "url": "https://t.co/uTJb8NcRvx",
+                    "expanded_url": "https://www.thegatewaypundit.com/2021/11/attorney-releases-first-pages-subpoenaed-fda-files-shows-pfizer-documented-158893-adverse-events-25957-nervous-system-disorders/?utm_source=Twitter&utm_medium=PostBottomSharingButtons&utm_campaign=websitesharingbuttons",
+                    "display_url": "thegatewaypundit.com/2021/11/attorn\u2026"
+                }
+            ]
+        }
+    },
+    "1462571215860559874": {
+        "text": "SAY NO TO COVID-19 VACCINE MANDATES - Pauline Hanson\u2019s One Nation Party https://t.co/u0GcuUHJPl via @OneNationAus",
+        "username": "BeeSting",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:45+00:00",
+        "user_location": "South Australia ",
+        "id": 1462571215860559874,
+        "public_metrics": {
+            "retweet_count": 1,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 100,
+                    "end": 113,
+                    "username": "OneNationAus",
+                    "id": "2810979570"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 72,
+                    "end": 95,
+                    "url": "https://t.co/u0GcuUHJPl",
+                    "expanded_url": "https://www.onenation.org.au/vaccine-mandates",
+                    "display_url": "onenation.org.au/vaccine-mandat\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 38,
+                    "end": 51,
+                    "probability": 0.9697,
+                    "type": "Person",
+                    "normalized_text": "Pauline Hanson"
+                }
+            ]
+        }
+    },
+    "1462571207514075136": {
+        "text": "There is no greater combination of #greed and disregard for #humanlife than a contract between the government abd the #oharmaceutical industry. How confident are you that the #vaccine did anything for you?",
+        "username": "Fighting4mywife",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:43+00:00",
+        "user_location": null,
+        "id": 1462571207514075136,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 35,
+                    "end": 41,
+                    "tag": "greed"
+                },
+                {
+                    "start": 60,
+                    "end": 70,
+                    "tag": "humanlife"
+                },
+                {
+                    "start": 118,
+                    "end": 133,
+                    "tag": "oharmaceutical"
+                },
+                {
+                    "start": 175,
+                    "end": 183,
+                    "tag": "vaccine"
+                }
+            ]
+        }
+    },
+    "1462571207081922560": {
+        "text": "Tomorrow we get to share our conversation with @JessicaManins, CEO &amp; Co-Founder of @beyondvrgames \n\nWe hear all about @FLUF_World, their latest project in collaboration with @WetaWorkshop, navigating Covid and a lot more \ud83d\udc4f",
+        "username": "zerotoplay",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:43+00:00",
+        "user_location": null,
+        "id": 1462571207081922560,
+        "public_metrics": {
+            "retweet_count": 3,
+            "reply_count": 1,
+            "like_count": 13,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 47,
+                    "end": 61,
+                    "username": "JessicaManins",
+                    "id": "348429141"
+                },
+                {
+                    "start": 87,
+                    "end": 101,
+                    "username": "beyondvrgames",
+                    "id": "1096254104442040320"
+                },
+                {
+                    "start": 122,
+                    "end": 133,
+                    "username": "FLUF_World",
+                    "id": "1412964808249405449"
+                },
+                {
+                    "start": 178,
+                    "end": 191,
+                    "username": "WetaWorkshop",
+                    "id": "23546560"
+                }
+            ]
+        }
+    },
+    "1462571205731434505": {
+        "text": "Yes. The party that politicized the pandemic and encouraged people not to take the life-saving vaccine https://t.co/LPjQQZjIMg",
+        "username": "RpsAgainstTrump",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:43+00:00",
+        "user_location": null,
+        "id": 1462571205731434505,
+        "public_metrics": {
+            "retweet_count": 11,
+            "reply_count": 3,
+            "like_count": 83,
+            "quote_count": 1
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 103,
+                    "end": 126,
+                    "url": "https://t.co/LPjQQZjIMg",
+                    "expanded_url": "https://twitter.com/redsteeze/status/1462456773760090112",
+                    "display_url": "twitter.com/redsteeze/stat\u2026"
+                }
+            ]
+        }
+    },
+    "1462571202317328398": {
+        "text": "LA Chargers S Trey Marshall (ankle) DT Christian Covington (COVID-19) DE Joey Bosa (COVID-19) DT Jerry Tillery (COVID-19) and RB Justin Jackson (quad) are upgraded to probable Sunday",
+        "username": "freeplays",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:42+00:00",
+        "user_location": "US",
+        "id": 1462571202317328398,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": {
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 10,
+                    "probability": 0.5535,
+                    "type": "Organization",
+                    "normalized_text": "LA Chargers"
+                },
+                {
+                    "start": 14,
+                    "end": 26,
+                    "probability": 0.9902,
+                    "type": "Person",
+                    "normalized_text": "Trey Marshall"
+                },
+                {
+                    "start": 39,
+                    "end": 57,
+                    "probability": 0.6541,
+                    "type": "Person",
+                    "normalized_text": "Christian Covington"
+                },
+                {
+                    "start": 73,
+                    "end": 81,
+                    "probability": 0.7165,
+                    "type": "Person",
+                    "normalized_text": "Joey Bosa"
+                },
+                {
+                    "start": 97,
+                    "end": 109,
+                    "probability": 0.8393,
+                    "type": "Person",
+                    "normalized_text": "Jerry Tillery"
+                },
+                {
+                    "start": 129,
+                    "end": 142,
+                    "probability": 0.9488,
+                    "type": "Person",
+                    "normalized_text": "Justin Jackson"
+                }
+            ]
+        }
+    },
+    "1462571198991290372": {
+        "text": "Hahahahaha!!! I\u2019ve been added to a dumbass list for calling out an adult advocating for children to have covid vaccines\ud83e\udd23\ud83e\udd23\ud83e\udd23 @JKenzie95 https://t.co/kcp4DPOF3H",
+        "username": "sarahcadabra_",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:41+00:00",
+        "user_location": null,
+        "id": 1462571198991290372,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 123,
+                    "end": 133,
+                    "username": "JKenzie95",
+                    "id": "2293084939"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 134,
+                    "end": 157,
+                    "url": "https://t.co/kcp4DPOF3H",
+                    "expanded_url": "https://twitter.com/sarahcadabra_/status/1462571198991290372/photo/1",
+                    "display_url": "pic.twitter.com/kcp4DPOF3H"
+                }
+            ]
+        }
+    },
+    "1462571196063567878": {
+        "text": "They also have a bunch of players on covid prototcol so this'll probably be 6-1 Isles. https://t.co/UtrpuKMrY3",
+        "username": "EoghanWheeler1",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:41+00:00",
+        "user_location": "Toronto, Ontario",
+        "id": 1462571196063567878,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 87,
+                    "end": 110,
+                    "url": "https://t.co/UtrpuKMrY3",
+                    "expanded_url": "https://twitter.com/koshtorontosun/status/1462486042934657024",
+                    "display_url": "twitter.com/koshtorontosun\u2026"
+                }
+            ]
+        }
+    },
+    "1462571194960564229": {
+        "text": "#voiceactor is trending which seems like a good time to let everyone know that #voiceacting absolutely kept my little family afloat during covid and continues to be the most wonderful, artistic way to spend time. https://t.co/lmXRRNOr69 if ya feelin cute.",
+        "username": "SaraKapner",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:40+00:00",
+        "user_location": "New York, NY",
+        "id": 1462571194960564229,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 0,
+                    "end": 11,
+                    "tag": "voiceactor"
+                },
+                {
+                    "start": 79,
+                    "end": 91,
+                    "tag": "voiceacting"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 213,
+                    "end": 236,
+                    "url": "https://t.co/lmXRRNOr69",
+                    "expanded_url": "http://voworkshopnyc.com",
+                    "display_url": "voworkshopnyc.com"
+                }
+            ]
+        }
+    },
+    "1462571193496604673": {
+        "text": "Parents are increasingly anxious about sending children back to school, not only due to Covid. Think about Air pollution in new delhi (why not all over India).  Celebrate all festivels india is not  crime. Create pollution is a crime. Try to Increase \ud83d\udd0bcars twowheelers\n@PMOIndia https://t.co/bynnntXerO",
+        "username": "AnbuchezhiyanD2",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:40+00:00",
+        "user_location": "\"\u0bae\u0bc6\u0baf\u0bcd\u0baa\u0bcd\u0baa\u0bca\u0bb0\u0bc1\u0bb3\u0bcd \u0b95\u0bbe\u0ba3\u0bcd\u0baa\u0ba4\u0bc1 \u0b85\u0bb1\u0bbf\u0bb5\u0bc1\"",
+        "id": 1462571193496604673,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 269,
+                    "end": 278,
+                    "username": "PMOIndia",
+                    "id": "471741741"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 279,
+                    "end": 302,
+                    "url": "https://t.co/bynnntXerO",
+                    "expanded_url": "https://twitter.com/AnbuchezhiyanD2/status/1462571193496604673/photo/1",
+                    "display_url": "pic.twitter.com/bynnntXerO"
+                },
+                {
+                    "start": 279,
+                    "end": 302,
+                    "url": "https://t.co/bynnntXerO",
+                    "expanded_url": "https://twitter.com/AnbuchezhiyanD2/status/1462571193496604673/photo/1",
+                    "display_url": "pic.twitter.com/bynnntXerO"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 88,
+                    "end": 92,
+                    "probability": 0.389,
+                    "type": "Place",
+                    "normalized_text": "Covid"
+                },
+                {
+                    "start": 128,
+                    "end": 132,
+                    "probability": 0.5604,
+                    "type": "Place",
+                    "normalized_text": "delhi"
+                },
+                {
+                    "start": 152,
+                    "end": 156,
+                    "probability": 0.9878,
+                    "type": "Place",
+                    "normalized_text": "India"
+                },
+                {
+                    "start": 185,
+                    "end": 189,
+                    "probability": 0.8549,
+                    "type": "Place",
+                    "normalized_text": "india"
+                }
+            ]
+        }
+    },
+    "1462571193458999298": {
+        "text": "Who\u2019s exempt from vaccine mandates?  Hmm \ud83e\udd14 \ud83e\udd28 https://t.co/oYusTUaGs3",
+        "username": "DougMonson31",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:40+00:00",
+        "user_location": null,
+        "id": 1462571193458999298,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 45,
+                    "end": 68,
+                    "url": "https://t.co/oYusTUaGs3",
+                    "expanded_url": "https://twitter.com/Kukicat7/status/1462551606327660551",
+                    "display_url": "twitter.com/Kukicat7/statu\u2026"
+                }
+            ]
+        }
+    },
+    "1462571190497775624": {
+        "text": "I wonder if 12 has COVID toe. It\u2019s a real thing. \ud83e\udd14",
+        "username": "PackersNotes",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:39+00:00",
+        "user_location": "New Jersey, USA",
+        "id": 1462571190497775624,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 5,
+            "like_count": 7,
+            "quote_count": 0
+        },
+        "entities": null
+    },
+    "1462571188538916871": {
+        "text": "Chiefs really got bailed out by Amari Cooper getting COVID",
+        "username": "joey_tellez1",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:39+00:00",
+        "user_location": null,
+        "id": 1462571188538916871,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 5,
+                    "probability": 0.9159,
+                    "type": "Organization",
+                    "normalized_text": "Chiefs"
+                },
+                {
+                    "start": 32,
+                    "end": 43,
+                    "probability": 0.9913,
+                    "type": "Person",
+                    "normalized_text": "Amari Cooper"
+                }
+            ]
+        }
+    },
+    "1462571188232720384": {
+        "text": "Mask-wearing is the single most effective public health measure at tackling Covid, reducing incidence by 53%, the first global study of its kind shows.\n\nsee here:https://t.co/vse8dkKuAC https://t.co/pSOxAjH82P",
+        "username": "global_icasts",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:39+00:00",
+        "user_location": "UK",
+        "id": 1462571188232720384,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 162,
+                    "end": 185,
+                    "url": "https://t.co/vse8dkKuAC",
+                    "expanded_url": "https://i-casts.com/.../mask-wearing-cuts-covid.../",
+                    "display_url": "i-casts.com/.../mask-weari\u2026",
+                    "status": 200,
+                    "title": "Mask-wearing cuts Covid incidence by 53%, says global study \u00ab i-casts.com",
+                    "description": "Mask-wearing is the single most effective public health measure at tackling Covid, reducing incidence by 53%, the first global study of its kind shows. Vaccines are safe and effective and saving lives around the world. But most do not confer 100% protection, most countries have not vaccinated everyone, and it is not yet known if jabs will prevent future transmission of emerging coronavirus variants. Globally, Covid cases exceeded 250 million this month. The virus is still infecting 50 million people",
+                    "unwound_url": "https://i-casts.com/health/mask-wearing-cuts-covid-incidence-by-53-says-global-study/"
+                },
+                {
+                    "start": 186,
+                    "end": 209,
+                    "url": "https://t.co/pSOxAjH82P",
+                    "expanded_url": "https://twitter.com/global_icasts/status/1462571188232720384/photo/1",
+                    "display_url": "pic.twitter.com/pSOxAjH82P"
+                }
+            ]
+        }
+    },
+    "1462571183304548358": {
+        "text": "Ben shows up on gameday after being out for a week with covid and we have no juju Haden watt or Fitzpatrick... oh boy",
+        "username": "joeywetmore",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:38+00:00",
+        "user_location": "Toledo, Ohio",
+        "id": 1462571183304548358,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 2,
+                    "probability": 0.9328,
+                    "type": "Person",
+                    "normalized_text": "Ben"
+                },
+                {
+                    "start": 82,
+                    "end": 91,
+                    "probability": 0.7591,
+                    "type": "Person",
+                    "normalized_text": "Haden watt"
+                },
+                {
+                    "start": 96,
+                    "end": 106,
+                    "probability": 0.9857,
+                    "type": "Person",
+                    "normalized_text": "Fitzpatrick"
+                }
+            ]
+        }
+    },
+    "1462571176669040642": {
+        "text": "I cannot believe people are actually leaving their husbands, wives, daughters, sons, sisters, brothers etc, over an experimental vaccine that is not needed and does not work. This has gone beyond brainwashing... This is pure evil taking over peoples souls.",
+        "username": "Bellagilboss",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:36+00:00",
+        "user_location": null,
+        "id": 1462571176669040642,
+        "public_metrics": {
+            "retweet_count": 34,
+            "reply_count": 4,
+            "like_count": 94,
+            "quote_count": 2
+        },
+        "entities": null
+    },
+    "1462571176639664128": {
+        "text": "anyways stan our Double Mask Covid Warrior Dream \ud83d\udc9a https://t.co/p04r7V3Ic8",
+        "username": "xlycheyene",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:36+00:00",
+        "user_location": "20 \ud83c\udf3c",
+        "id": 1462571176639664128,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 51,
+                    "end": 74,
+                    "url": "https://t.co/p04r7V3Ic8",
+                    "expanded_url": "https://twitter.com/xlycheyene/status/1462571176639664128/photo/1",
+                    "display_url": "pic.twitter.com/p04r7V3Ic8"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 17,
+                    "end": 47,
+                    "probability": 0.3529,
+                    "type": "Product",
+                    "normalized_text": "Double Mask Covid Warrior Dream"
+                }
+            ]
+        }
+    },
+    "1462571176585224198": {
+        "text": "the two biggest mistakes the banking mafia made:\n\n1) not testing their mRNA \"vaccine\" properly before injecting it into millions\n\n2) scaring their hypochondriac relatives into taking it more than everyone else https://t.co/HKNA45P005",
+        "username": "greyraven20",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:36+00:00",
+        "user_location": null,
+        "id": 1462571176585224198,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 210,
+                    "end": 233,
+                    "url": "https://t.co/HKNA45P005",
+                    "expanded_url": "https://twitter.com/JohnBoweActor/status/1462443828116434952",
+                    "display_url": "twitter.com/JohnBoweActor/\u2026"
+                }
+            ]
+        }
+    },
+    "1462571170025418754": {
+        "text": "The selfishness of the antivaxxers affects us all. #COVID__19  https://t.co/ZgSKUtGMxS",
+        "username": "snowleopardess",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:34+00:00",
+        "user_location": "South East London, UK",
+        "id": 1462571170025418754,
+        "public_metrics": {
+            "retweet_count": 3,
+            "reply_count": 2,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 51,
+                    "end": 61,
+                    "tag": "COVID__19"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 63,
+                    "end": 86,
+                    "url": "https://t.co/ZgSKUtGMxS",
+                    "expanded_url": "https://www.theguardian.com/world/2021/nov/21/icu-is-full-of-the-unvaccinated-my-patience-with-them-is-wearing-thin",
+                    "display_url": "theguardian.com/world/2021/nov\u2026"
+                }
+            ]
+        }
+    },
+    "1462571168444129288": {
+        "text": "1st Covid shot - Minor side effects\n2nd covid shot - every side effect under the sun\nBooster shot - To be determined. Hoping for some improved 5G\n\nFor those that got the booster, did you have any side effects?",
+        "username": "Trel67",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:34+00:00",
+        "user_location": "New England Area",
+        "id": 1462571168444129288,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 2,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": null
+    },
+    "1462571167961780224": {
+        "text": "Top 5 Leadership Trends in 2021 https://t.co/5Wce3PWZHx #changemindset #covid #ethicalblindspots #leadershiptrends #lineapproach #tnt2021",
+        "username": "TheNextTech2018",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:34+00:00",
+        "user_location": "Worldwide",
+        "id": 1462571167961780224,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 56,
+                    "end": 70,
+                    "tag": "changemindset"
+                },
+                {
+                    "start": 71,
+                    "end": 77,
+                    "tag": "covid"
+                },
+                {
+                    "start": 78,
+                    "end": 96,
+                    "tag": "ethicalblindspots"
+                },
+                {
+                    "start": 97,
+                    "end": 114,
+                    "tag": "leadershiptrends"
+                },
+                {
+                    "start": 115,
+                    "end": 128,
+                    "tag": "lineapproach"
+                },
+                {
+                    "start": 129,
+                    "end": 137,
+                    "tag": "tnt2021"
+                }
+            ],
+            "urls": [
+                {
+                    "start": 32,
+                    "end": 55,
+                    "url": "https://t.co/5Wce3PWZHx",
+                    "expanded_url": "https://www.the-next-tech.com/?p=39724&utm_source=twitter&utm_medium=social&utm_campaign=TNT",
+                    "display_url": "the-next-tech.com/?p=39724&utm_s\u2026"
+                }
+            ]
+        }
+    },
+    "1462571160760029184": {
+        "text": "DOC exploring Covid-19 vaccine requirements for trampers https://t.co/fEm4UB7w80. Isn\u2019t it insane for anyone to sleep in a hut with unvaccinated fellow sleepers when you need to be vaccinated or have a negative test to spend an hour on a plane?",
+        "username": "rtoomath",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:32+00:00",
+        "user_location": "Waiheke Island, Auckland, NZ",
+        "id": 1462571160760029184,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 1
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 57,
+                    "end": 80,
+                    "url": "https://t.co/fEm4UB7w80",
+                    "expanded_url": "https://www.rnz.co.nz/news/national/455608/doc-exploring-covid-19-vaccine-requirements-for-trampers",
+                    "display_url": "rnz.co.nz/news/national/\u2026"
+                }
+            ]
+        }
+    },
+    "1462571159871012870": {
+        "text": "US non-profit responds to claims it brought close relative of Covid-19 virus to\u00a0Wuhan https://t.co/X2BVr1wI84",
+        "username": "ThePRESSUnited",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:32+00:00",
+        "user_location": "New Delhi, India",
+        "id": 1462571159871012870,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 86,
+                    "end": 109,
+                    "url": "https://t.co/X2BVr1wI84",
+                    "expanded_url": "https://thepressunited.com/updates/us-non-profit-responds-to-claims-it-brought-close-relative-of-covid-19-virus-to-wuhan/",
+                    "display_url": "thepressunited.com/updates/us-non\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 1,
+                    "probability": 0.6433,
+                    "type": "Place",
+                    "normalized_text": "US"
+                }
+            ]
+        }
+    },
+    "1462571156922273794": {
+        "text": "ohum I just wanted to say sorry for not rlly talking about the ccs and covid thing. this conversation is so repetitive to me and it stresses me out so Im just Not going to talk about it. just know I think these ccs are being irresponsible but there's not much we can do about it\ud83d\udc4d",
+        "username": "sapnapapoIogist",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:31+00:00",
+        "user_location": "pfp kauwo_",
+        "id": 1462571156922273794,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": null
+    },
+    "1462571152958582787": {
+        "text": "We need Coronavirus vaccines for Animals now. We have them for people already. So many Animals in zoos across the USA, particularly Tigers and Snow Leopards, have died from the virus.",
+        "username": "GradyForbes5",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:30+00:00",
+        "user_location": "Siberia",
+        "id": 1462571152958582787,
+        "public_metrics": {
+            "retweet_count": 1,
+            "reply_count": 0,
+            "like_count": 3,
+            "quote_count": 0
+        },
+        "entities": {
+            "annotations": [
+                {
+                    "start": 114,
+                    "end": 116,
+                    "probability": 0.9881,
+                    "type": "Place",
+                    "normalized_text": "USA"
+                },
+                {
+                    "start": 143,
+                    "end": 155,
+                    "probability": 0.2782,
+                    "type": "Organization",
+                    "normalized_text": "Snow Leopards"
+                }
+            ]
+        }
+    },
+    "1462571152677785610": {
+        "text": "was he vaccinated?  Short battles with cancer are on the rise in those vaccinated. according to some oncologists, the vaccine may be blocking the bodies ability to fight cancer cells.\nWill Ryan, Veteran Disney Voice Actor, Dies at 72 https://t.co/6jo8daf3kB",
+        "username": "stephenHarper9",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:30+00:00",
+        "user_location": "lancaster ma",
+        "id": 1462571152677785610,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 234,
+                    "end": 257,
+                    "url": "https://t.co/6jo8daf3kB",
+                    "expanded_url": "http://a.msn.com/0C/en-us/AAQWGFB?ocid=st",
+                    "display_url": "a.msn.com/0C/en-us/AAQWG\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 189,
+                    "end": 192,
+                    "probability": 0.9686,
+                    "type": "Person",
+                    "normalized_text": "Ryan"
+                }
+            ]
+        }
+    },
+    "1462571145954095106": {
+        "text": "Upon hearing serious Covid 19 patients I\u2019m familiar with; a close family member said, we are getting old and there\u2019s too much sorrow to endure. \n\nSome one once said, \u201cparting is such sweet sorrow\u2026\u201d, Shakespeare, Romeo &amp; Juliet. \n\nBut, never at this alarming rate. Sigh.",
+        "username": "AbangFatahTahir",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:29+00:00",
+        "user_location": "Purgatorio, N7 7AJ",
+        "id": 1462571145954095106,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "annotations": [
+                {
+                    "start": 199,
+                    "end": 209,
+                    "probability": 0.8537,
+                    "type": "Person",
+                    "normalized_text": "Shakespeare"
+                },
+                {
+                    "start": 212,
+                    "end": 216,
+                    "probability": 0.5987,
+                    "type": "Person",
+                    "normalized_text": "Romeo"
+                },
+                {
+                    "start": 220,
+                    "end": 225,
+                    "probability": 0.6766,
+                    "type": "Person",
+                    "normalized_text": "Juliet"
+                }
+            ]
+        }
+    },
+    "1462571145496989699": {
+        "text": "Australia politics live update: Pauline Hanson introduces \u2018vaccine discrimination\u2019 bill; 1,029 Covid cases in Victoria https://t.co/lFMaWI4SUr",
+        "username": "fehowarth",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:29+00:00",
+        "user_location": "Central Coast NSW",
+        "id": 1462571145496989699,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 119,
+                    "end": 142,
+                    "url": "https://t.co/lFMaWI4SUr",
+                    "expanded_url": "https://www.theguardian.com/australia-news/live/2021/nov/22/australia-politics-parliament-covid-nt-nsw-act-morrison-legislation-vaccination-election-victoria-pandemic-perrottet-andrews?CMP=share_btn_tw&page=with:block-619ad9c08f0812dc63d02bf7#block-619ad9c08f0812dc63d02bf7",
+                    "display_url": "theguardian.com/australia-news\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 8,
+                    "probability": 0.9508,
+                    "type": "Place",
+                    "normalized_text": "Australia"
+                },
+                {
+                    "start": 32,
+                    "end": 45,
+                    "probability": 0.9961,
+                    "type": "Person",
+                    "normalized_text": "Pauline Hanson"
+                },
+                {
+                    "start": 110,
+                    "end": 117,
+                    "probability": 0.7902,
+                    "type": "Place",
+                    "normalized_text": "Victoria"
+                }
+            ]
+        }
+    },
+    "1462571144817561606": {
+        "text": "Get your flu vaccine \ud83d\udc89 https://t.co/mGwOEL60k5",
+        "username": "Logical1966",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:28+00:00",
+        "user_location": "Keighley",
+        "id": 1462571144817561606,
+        "public_metrics": {
+            "retweet_count": 1,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 23,
+                    "end": 46,
+                    "url": "https://t.co/mGwOEL60k5",
+                    "expanded_url": "https://youtu.be/7R1Mw4y9MsI",
+                    "display_url": "youtu.be/7R1Mw4y9MsI"
+                }
+            ]
+        }
+    },
+    "1462571142460305415": {
+        "text": "This is just a really lovely story, and reminds you of the importance of community.\n\nhttps://t.co/B45yb2l1wE",
+        "username": "ConradLiveris",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:28+00:00",
+        "user_location": "Perth, Western Australia",
+        "id": 1462571142460305415,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 85,
+                    "end": 108,
+                    "url": "https://t.co/B45yb2l1wE",
+                    "expanded_url": "https://www.abc.net.au/news/2021-11-22/qld-coronavirus-covid-volunteer-home-visits/100628148",
+                    "display_url": "abc.net.au/news/2021-11-2\u2026"
+                }
+            ]
+        }
+    },
+    "1462571141294432258": {
+        "text": "WHO: Another 500,000 people in Europe could die of Covid by March | Coronavirus | The Guardian https://t.co/uo9gk4um0l",
+        "username": "renissance_1",
+        "lang": "en",
+        "created_at": "2021-11-21 23:58:27+00:00",
+        "user_location": "United States",
+        "id": 1462571141294432258,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 95,
+                    "end": 118,
+                    "url": "https://t.co/uo9gk4um0l",
+                    "expanded_url": "https://www.theguardian.com/world/2021/nov/20/covid-deaths-europe-who-warning-",
+                    "display_url": "theguardian.com/world/2021/nov\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 31,
+                    "end": 36,
+                    "probability": 0.9961,
+                    "type": "Place",
+                    "normalized_text": "Europe"
+                },
+                {
+                    "start": 51,
+                    "end": 55,
+                    "probability": 0.3454,
+                    "type": "Place",
+                    "normalized_text": "Covid"
+                },
+                {
+                    "start": 82,
+                    "end": 93,
+                    "probability": 0.6607,
+                    "type": "Organization",
+                    "normalized_text": "The Guardian"
                 }
             ]
         }
