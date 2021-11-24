@@ -1,0 +1,92 @@
+{
+    "1463337539704602624": {
+        "text": "Unjust and irresponsible: only 2% of COVID-19 vaccines have been made available to people living in low income countries. Tell leaders to adopt a plan to vaccinate the whole world and #EndCovidEverywhere https://t.co/QJGLom2eKZ",
+        "lang": null,
+        "geo": null,
+        "id": 1463337539704602624
+    },
+    "1463337531680997385": {
+        "text": "I am very surprised by the low vaccination percentages in MANY States in the United States. I myself WOULDN'T visit a State with less than 50% fully vaccinated. I myself have underlying health issues..traveling to a State with low vaccination % is just asking for health issues...",
+        "lang": null,
+        "geo": null,
+        "id": 1463337531680997385
+    },
+    "1463337530187735047": {
+        "text": "I don\u2019t know what it says about me that I am the kind of person who heavily prepared to be ill after my covid shot\u2026 but I got my shot, and I got a bag of cheetos and bottles Gatorade next to my bed and now I\u2019m ready to party!",
+        "lang": null,
+        "geo": null,
+        "id": 1463337530187735047
+    },
+    "1463337530066018311": {
+        "text": "hey besties i have not died yet &lt;3 just been very sick but good news covid helped me lose 5lbs this week so im almost to the 130s",
+        "lang": null,
+        "geo": null,
+        "id": 1463337530066018311
+    },
+    "1463337515729899524": {
+        "text": "Generation Equality: Alongside COVID lies an \u2018equally horrific pandemic\u2019 threatening\u00a0women https://t.co/8REdYdWOLc",
+        "lang": null,
+        "geo": null,
+        "id": 1463337515729899524
+    },
+    "1463337509472063488": {
+        "text": "Micro Containment Zone, Buffer Zone Declared In Covid-Hit\u00a0VIMSAR https://t.co/5Nb7Gl23jd",
+        "lang": null,
+        "geo": null,
+        "id": 1463337509472063488
+    },
+    "1463337507668443139": {
+        "text": "Why are there still #COVID deniers and why are we tolerating this level of stupidity?",
+        "lang": null,
+        "geo": null,
+        "id": 1463337507668443139
+    },
+    "1463337498671828995": {
+        "text": "They clised two full floors in an upstate ny hospital\u2026 mandates. Meanwhile all vaxed healthcare workers who can get and transmit covid are not even required to test.this is ignorance at a level that defies intelligance.put us all back to work w weekly testing.hear that hochul??? https://t.co/agFDE9tM2U",
+        "lang": null,
+        "geo": null,
+        "id": 1463337498671828995
+    },
+    "1463337491755200515": {
+        "text": "Canadian game to educate kids about COVID now features Cree translation https://t.co/SGXVx2gz0i thanks @MSN",
+        "lang": null,
+        "geo": null,
+        "id": 1463337491755200515
+    },
+    "1463337489872011271": {
+        "text": "Ethical Doctor Practicing Ethical Medicine Reports 0/2000 Hospitalization Rate in Patients Treated for COVID-19, by @lifebiomedguru https://t.co/a3Eab42ewF",
+        "lang": null,
+        "geo": null,
+        "id": 1463337489872011271
+    },
+    "1463337489653977088": {
+        "text": "Good idea \u2014 FYI https://t.co/pWYEBJe2Xn has them in stock now for $14 a box (2 tests per box)!\n\nhttps://t.co/APmI9MlRei https://t.co/D1HFV9MKDo",
+        "lang": null,
+        "geo": null,
+        "id": 1463337489653977088
+    },
+    "1463337488165052416": {
+        "text": "Here's why children should not receive COVID-19 vaccines - LifeSite https://t.co/GOoPbkA4Ug",
+        "lang": null,
+        "geo": null,
+        "id": 1463337488165052416
+    },
+    "1463337487284146182": {
+        "text": "\ud835\udddb\ud835\uddd4\ud835\udde3\ud835\udde3\ud835\uddd8\ud835\udde1\ud835\udddc\ud835\udde1\ud835\uddda \ud835\udde1\ud835\udde2\ud835\uddea: VYM attends the Stakeholders Meeting for Demand Generation &amp; Communication for Bayanihan Bakunahan Advocacy leading to the Nat'l Vaccination Day this November 29-December 1.\n\nVYM is the sole organization representing the youth in this meeting. https://t.co/7NNPiVwM0E",
+        "lang": null,
+        "geo": null,
+        "id": 1463337487284146182
+    },
+    "1463337486222958598": {
+        "text": "Traveling internationally? Now you can use your digital vaccine card from SMART Health Card issuers like CA, WA, CO,  @UCSDHealth, and more to easily vaccine verify for travel to the UK, Israel, Singapore, and more! https://t.co/jWo8MASyPw",
+        "lang": null,
+        "geo": null,
+        "id": 1463337486222958598
+    },
+    "1463337485186985984": {
+        "text": "New post Notice to Centre on PM Modi's photo on Indian Vax certificate  https://t.co/jxEWRydzaZ",
+        "lang": null,
+        "geo": null,
+        "id": 1463337485186985984
+    }
+}
