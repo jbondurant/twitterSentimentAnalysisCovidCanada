@@ -1,92 +1,488 @@
 {
-    "1463337539704602624": {
-        "text": "Unjust and irresponsible: only 2% of COVID-19 vaccines have been made available to people living in low income countries. Tell leaders to adopt a plan to vaccinate the whole world and #EndCovidEverywhere https://t.co/QJGLom2eKZ",
-        "lang": null,
-        "geo": null,
-        "id": 1463337539704602624
+    "1462571523957567493": {
+        "text": "Damn Straight. You can b.s. the spectators, but not the players.\nRT @thebradfordfile: I know a bunch of people who got the vaccine, but are saying 'hell no' to a booster. They're done with the pandemic lies.",
+        "username": "Circle_R185",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:59+00:00",
+        "user_location": "Army Commendation Medal",
+        "id": 1462571523957567493,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": {
+            "mentions": [
+                {
+                    "start": 68,
+                    "end": 84,
+                    "username": "thebradfordfile",
+                    "id": "3406938525"
+                }
+            ]
+        }
     },
-    "1463337531680997385": {
-        "text": "I am very surprised by the low vaccination percentages in MANY States in the United States. I myself WOULDN'T visit a State with less than 50% fully vaccinated. I myself have underlying health issues..traveling to a State with low vaccination % is just asking for health issues...",
-        "lang": null,
-        "geo": null,
-        "id": 1463337531680997385
+    "1462571514872709120": {
+        "text": "Attorney Releases First Pages from Subpoenaed FDA Files - Shows Pfizer Documented 158,893 Adverse Events with 25,957 Nervous System Disorders in First Few Months of Distribution https://t.co/54cBYmRAg2 via @gatewaypundit",
+        "username": "mwenger1993",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:57+00:00",
+        "user_location": null,
+        "id": 1462571514872709120,
+        "public_metrics": {
+            "retweet_count": 3,
+            "reply_count": 1,
+            "like_count": 3,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 178,
+                    "end": 201,
+                    "url": "https://t.co/54cBYmRAg2",
+                    "expanded_url": "https://www.thegatewaypundit.com/2021/11/attorney-releases-first-pages-subpoenaed-fda-files-shows-pfizer-documented-158893-adverse-events-25957-nervous-system-disorders/?utm_source=Twitter&utm_medium=PostTopSharingButtons&utm_campaign=websitesharingbuttons",
+                    "display_url": "thegatewaypundit.com/2021/11/attorn\u2026"
+                }
+            ],
+            "mentions": [
+                {
+                    "start": 206,
+                    "end": 220,
+                    "username": "gatewaypundit",
+                    "id": "19211550"
+                }
+            ]
+        }
     },
-    "1463337530187735047": {
-        "text": "I don\u2019t know what it says about me that I am the kind of person who heavily prepared to be ill after my covid shot\u2026 but I got my shot, and I got a bag of cheetos and bottles Gatorade next to my bed and now I\u2019m ready to party!",
-        "lang": null,
-        "geo": null,
-        "id": 1463337530187735047
+    "1462571512532246529": {
+        "text": "Dr. Robert Malone: On the International COVID Summit and More  | Interview https://t.co/K5ywYX3Mtm via @YouTube",
+        "username": "gregorytheleast",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:56+00:00",
+        "user_location": null,
+        "id": 1462571512532246529,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 75,
+                    "end": 98,
+                    "url": "https://t.co/K5ywYX3Mtm",
+                    "expanded_url": "https://youtu.be/EWWvk2SaMS4",
+                    "display_url": "youtu.be/EWWvk2SaMS4"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 0,
+                    "end": 16,
+                    "probability": 0.946,
+                    "type": "Person",
+                    "normalized_text": "Dr. Robert Malone"
+                }
+            ],
+            "mentions": [
+                {
+                    "start": 103,
+                    "end": 111,
+                    "username": "YouTube",
+                    "id": "10228272"
+                }
+            ]
+        }
     },
-    "1463337530066018311": {
-        "text": "hey besties i have not died yet &lt;3 just been very sick but good news covid helped me lose 5lbs this week so im almost to the 130s",
-        "lang": null,
-        "geo": null,
-        "id": 1463337530066018311
+    "1462571511798247436": {
+        "text": "We are seeing globally amongst the varying socio economic classes struggle for equity and or autonomy. This is both the explanation for the #race riots, and for the anti #covid vaccine #protest. This is the underlying reason for the emotion behind the #RittenhouseVerdict",
+        "username": "ruddforyourlife",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:56+00:00",
+        "user_location": "Port Royal, SC",
+        "id": 1462571511798247436,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 140,
+                    "end": 145,
+                    "tag": "race"
+                },
+                {
+                    "start": 170,
+                    "end": 176,
+                    "tag": "covid"
+                },
+                {
+                    "start": 185,
+                    "end": 193,
+                    "tag": "protest"
+                },
+                {
+                    "start": 252,
+                    "end": 271,
+                    "tag": "RittenhouseVerdict"
+                }
+            ]
+        }
     },
-    "1463337515729899524": {
-        "text": "Generation Equality: Alongside COVID lies an \u2018equally horrific pandemic\u2019 threatening\u00a0women https://t.co/8REdYdWOLc",
-        "lang": null,
-        "geo": null,
-        "id": 1463337515729899524
+    "1462571507612278788": {
+        "text": "i want to be like wilbur so bad.\nmaybe without the covid spreader part",
+        "username": "dreamwhoretaken",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:55+00:00",
+        "user_location": "any pronouns + it \u2022 iggc \ud83c\uddee\ud83c\uddf9",
+        "id": 1462571507612278788,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": null
     },
-    "1463337509472063488": {
-        "text": "Micro Containment Zone, Buffer Zone Declared In Covid-Hit\u00a0VIMSAR https://t.co/5Nb7Gl23jd",
-        "lang": null,
-        "geo": null,
-        "id": 1463337509472063488
+    "1462571506672750602": {
+        "text": "The Big Read: Live streaming, gamification spur rise of 'retailtainment' amid e-commerce's pandemic boom - CNA https://t.co/DM4koPVEoS",
+        "username": "kartik1973",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:55+00:00",
+        "user_location": "McKinney, TX",
+        "id": 1462571506672750602,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 111,
+                    "end": 134,
+                    "url": "https://t.co/DM4koPVEoS",
+                    "expanded_url": "https://ift.tt/3nDE0gA",
+                    "display_url": "ift.tt/3nDE0gA"
+                }
+            ]
+        }
     },
-    "1463337507668443139": {
-        "text": "Why are there still #COVID deniers and why are we tolerating this level of stupidity?",
-        "lang": null,
-        "geo": null,
-        "id": 1463337507668443139
+    "1462571502537166852": {
+        "text": "If you compare covid to the Holocaust; youre immediately done.",
+        "username": "shangregory",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:54+00:00",
+        "user_location": "London ON ",
+        "id": 1462571502537166852,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": null
     },
-    "1463337498671828995": {
-        "text": "They clised two full floors in an upstate ny hospital\u2026 mandates. Meanwhile all vaxed healthcare workers who can get and transmit covid are not even required to test.this is ignorance at a level that defies intelligance.put us all back to work w weekly testing.hear that hochul??? https://t.co/agFDE9tM2U",
-        "lang": null,
-        "geo": null,
-        "id": 1463337498671828995
+    "1462571484199673861": {
+        "text": "\"Massive demonstrations against vaccine passports and lockdowns in Austria, Croatia, Italy, Ireland, the UK, France, Germany, the Netherlands, Canada, Australia, Japan, and even the US.\"\nhttps://t.co/ROxzmJY7M9",
+        "username": "ArmyIWGFW",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:49+00:00",
+        "user_location": "Grand Falls-Windsor, Newfoundl",
+        "id": 1462571484199673861,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 187,
+                    "end": 210,
+                    "url": "https://t.co/ROxzmJY7M9",
+                    "expanded_url": "https://www.newswars.com/well-never-give-up-protests-erupt-across-world-over-govt-covid-tyranny/",
+                    "display_url": "newswars.com/well-never-giv\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 67,
+                    "end": 73,
+                    "probability": 0.9998,
+                    "type": "Place",
+                    "normalized_text": "Austria"
+                },
+                {
+                    "start": 76,
+                    "end": 82,
+                    "probability": 0.9127,
+                    "type": "Place",
+                    "normalized_text": "Croatia"
+                },
+                {
+                    "start": 85,
+                    "end": 89,
+                    "probability": 0.9976,
+                    "type": "Place",
+                    "normalized_text": "Italy"
+                },
+                {
+                    "start": 92,
+                    "end": 98,
+                    "probability": 0.9992,
+                    "type": "Place",
+                    "normalized_text": "Ireland"
+                },
+                {
+                    "start": 105,
+                    "end": 106,
+                    "probability": 0.9974,
+                    "type": "Place",
+                    "normalized_text": "UK"
+                },
+                {
+                    "start": 109,
+                    "end": 114,
+                    "probability": 0.998,
+                    "type": "Place",
+                    "normalized_text": "France"
+                },
+                {
+                    "start": 117,
+                    "end": 123,
+                    "probability": 0.9991,
+                    "type": "Place",
+                    "normalized_text": "Germany"
+                },
+                {
+                    "start": 130,
+                    "end": 140,
+                    "probability": 0.9979,
+                    "type": "Place",
+                    "normalized_text": "Netherlands"
+                },
+                {
+                    "start": 143,
+                    "end": 148,
+                    "probability": 0.9729,
+                    "type": "Place",
+                    "normalized_text": "Canada"
+                },
+                {
+                    "start": 151,
+                    "end": 159,
+                    "probability": 0.9981,
+                    "type": "Place",
+                    "normalized_text": "Australia"
+                },
+                {
+                    "start": 162,
+                    "end": 166,
+                    "probability": 0.9918,
+                    "type": "Place",
+                    "normalized_text": "Japan"
+                },
+                {
+                    "start": 182,
+                    "end": 183,
+                    "probability": 0.907,
+                    "type": "Place",
+                    "normalized_text": "US"
+                }
+            ]
+        }
     },
-    "1463337491755200515": {
-        "text": "Canadian game to educate kids about COVID now features Cree translation https://t.co/SGXVx2gz0i thanks @MSN",
-        "lang": null,
-        "geo": null,
-        "id": 1463337491755200515
+    "1462571483801083905": {
+        "text": "The vaccine is not the \"Mark of the Beast\" even if it means you can't buy or sell if you don't get it, and may lose a job or be expelled from school. But the way it feels isn't all that different. The infrastructure is in place to apply this to other issues. Pro-vax, anti-mandate",
+        "username": "RelLibertyTV",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:49+00:00",
+        "user_location": "Etats-Unis",
+        "id": 1462571483801083905,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": null
     },
-    "1463337489872011271": {
-        "text": "Ethical Doctor Practicing Ethical Medicine Reports 0/2000 Hospitalization Rate in Patients Treated for COVID-19, by @lifebiomedguru https://t.co/a3Eab42ewF",
-        "lang": null,
-        "geo": null,
-        "id": 1463337489872011271
+    "1462571479640391683": {
+        "text": "35,000 in Brussels say no to outrageous covid restrictions. The people are finally rising globally. Keep it up ! \u2665\ufe0f\ud83d\udc4f\n\nClashes break out in Brussels in protests over coronavirus restrictions https://t.co/DfEbrE86rH",
+        "username": "Evolve_Ascend",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:48+00:00",
+        "user_location": "Oakland California, USA",
+        "id": 1462571479640391683,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 190,
+                    "end": 213,
+                    "url": "https://t.co/DfEbrE86rH",
+                    "expanded_url": "https://www.reuters.com/world/europe/around-35000-protest-against-covid-restrictions-brussels-police-say-2021-11-21/",
+                    "display_url": "reuters.com/world/europe/a\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 10,
+                    "end": 17,
+                    "probability": 0.9849,
+                    "type": "Place",
+                    "normalized_text": "Brussels"
+                },
+                {
+                    "start": 140,
+                    "end": 147,
+                    "probability": 0.9838,
+                    "type": "Place",
+                    "normalized_text": "Brussels"
+                }
+            ]
+        }
     },
-    "1463337489653977088": {
-        "text": "Good idea \u2014 FYI https://t.co/pWYEBJe2Xn has them in stock now for $14 a box (2 tests per box)!\n\nhttps://t.co/APmI9MlRei https://t.co/D1HFV9MKDo",
-        "lang": null,
-        "geo": null,
-        "id": 1463337489653977088
+    "1462571475710316544": {
+        "text": "While there no guarantee that COVID wouldn\u2019t have found another way into the state in the same timeframe, recent revelations from NSW show that Victoria may have been spared another Delta outbreak and Melbourne may not have been given the title of \u2018most locked down city\u2019.\n\n1.",
+        "username": "RhysParton",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:47+00:00",
+        "user_location": "Waywurru Country, Australia",
+        "id": 1462571475710316544,
+        "public_metrics": {
+            "retweet_count": 6,
+            "reply_count": 3,
+            "like_count": 29,
+            "quote_count": 1
+        },
+        "entities": {
+            "annotations": [
+                {
+                    "start": 30,
+                    "end": 34,
+                    "probability": 0.3659,
+                    "type": "Organization",
+                    "normalized_text": "COVID"
+                },
+                {
+                    "start": 130,
+                    "end": 132,
+                    "probability": 0.6608,
+                    "type": "Place",
+                    "normalized_text": "NSW"
+                },
+                {
+                    "start": 144,
+                    "end": 151,
+                    "probability": 0.5315,
+                    "type": "Place",
+                    "normalized_text": "Victoria"
+                },
+                {
+                    "start": 201,
+                    "end": 209,
+                    "probability": 0.9528,
+                    "type": "Place",
+                    "normalized_text": "Melbourne"
+                }
+            ]
+        }
     },
-    "1463337488165052416": {
-        "text": "Here's why children should not receive COVID-19 vaccines - LifeSite https://t.co/GOoPbkA4Ug",
-        "lang": null,
-        "geo": null,
-        "id": 1463337488165052416
+    "1462571475421040640": {
+        "text": "no bc i\u2019m scared of i get covid from my grandma like yes i have the vaccine but missing school is like a deal to me bc i\u2019ll get too stressed with all the work i gotta do afterwards",
+        "username": "that_connie",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:47+00:00",
+        "user_location": "mirror pronouns",
+        "id": 1462571475421040640,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 2,
+            "quote_count": 0
+        },
+        "entities": null
     },
-    "1463337487284146182": {
-        "text": "\ud835\udddb\ud835\uddd4\ud835\udde3\ud835\udde3\ud835\uddd8\ud835\udde1\ud835\udddc\ud835\udde1\ud835\uddda \ud835\udde1\ud835\udde2\ud835\uddea: VYM attends the Stakeholders Meeting for Demand Generation &amp; Communication for Bayanihan Bakunahan Advocacy leading to the Nat'l Vaccination Day this November 29-December 1.\n\nVYM is the sole organization representing the youth in this meeting. https://t.co/7NNPiVwM0E",
-        "lang": null,
-        "geo": null,
-        "id": 1463337487284146182
+    "1462571473923620870": {
+        "text": "My brother told the kids Santa got covid this year \ud83d\ude02",
+        "username": "abcdefghijKORI",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:47+00:00",
+        "user_location": "\ud83c\udf88Kansas City , Missouri . . .",
+        "id": 1462571473923620870,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "entities": {
+            "annotations": [
+                {
+                    "start": 25,
+                    "end": 29,
+                    "probability": 0.7804,
+                    "type": "Person",
+                    "normalized_text": "Santa"
+                }
+            ]
+        }
     },
-    "1463337486222958598": {
-        "text": "Traveling internationally? Now you can use your digital vaccine card from SMART Health Card issuers like CA, WA, CO,  @UCSDHealth, and more to easily vaccine verify for travel to the UK, Israel, Singapore, and more! https://t.co/jWo8MASyPw",
-        "lang": null,
-        "geo": null,
-        "id": 1463337486222958598
-    },
-    "1463337485186985984": {
-        "text": "New post Notice to Centre on PM Modi's photo on Indian Vax certificate  https://t.co/jxEWRydzaZ",
-        "lang": null,
-        "geo": null,
-        "id": 1463337485186985984
+    "1462571472476639235": {
+        "text": "I got the J&amp;J in March and Pfizer booster at end of October. I feel like I need to get a second Pfizer shot! Nobody is answering this question and we need to know https://t.co/WtC3MjoY74",
+        "username": "liberalsusie",
+        "lang": "en",
+        "created_at": "2021-11-21 23:59:46+00:00",
+        "user_location": null,
+        "id": 1462571472476639235,
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "entities": {
+            "urls": [
+                {
+                    "start": 167,
+                    "end": 190,
+                    "url": "https://t.co/WtC3MjoY74",
+                    "expanded_url": "https://twitter.com/Carry_On60/status/1462553291728982021",
+                    "display_url": "twitter.com/Carry_On60/sta\u2026"
+                }
+            ],
+            "annotations": [
+                {
+                    "start": 27,
+                    "end": 32,
+                    "probability": 0.623,
+                    "type": "Organization",
+                    "normalized_text": "Pfizer"
+                },
+                {
+                    "start": 96,
+                    "end": 101,
+                    "probability": 0.3672,
+                    "type": "Organization",
+                    "normalized_text": "Pfizer"
+                }
+            ]
+        }
     }
 }
