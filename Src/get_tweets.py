@@ -1,4 +1,4 @@
-import tweepy
+import tweepy as tw
 import json
 
 def read_json(credentials_path):
@@ -6,11 +6,10 @@ def read_json(credentials_path):
         credentials = json.load(fh)
         return credentials
 
-def write_tweets(tweet_results, tweets_path):
-    tweets_file = open(tweets_path, "w")
-    for tweet in tweet_results:
-        tweets_file.write(tweet + "\n")
-    tweets_file.close()
+
+def write_tweets(clean_tweets, tweets_path):
+    with open(tweets_path, 'w') as fh:
+        json.dump(clean_tweets, fh, indent=4)
 
 
 def build_query_string(query_word_list):
@@ -24,13 +23,11 @@ def build_query_string(query_word_list):
     query_string = '('
     for query_word in query_list_fixed:
         query_string += query_word
-
-
-
-
     #this doc explains following code parameters https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-query
-    query_string += ') lang:en -is:retweet -is:reply -is:nullcast'
+    #query_string += ') lang:en -is:retweet -is:reply -is:nullcast'
+    query_string += ') lang:en -is:retweet -is:reply'
     return query_string
+
 
 #mycourses mentions getting canadian tweets by timezone, but I don't think that's possible
 #we can't search for tweets by location without an academic account, which is for masters students and above
@@ -40,18 +37,26 @@ def build_query_string(query_word_list):
 def get_api_tweets(client, query_string):
     if len(query_string) > 512:
         raise ValueError('Query length too long')
-
     # dates can be changed, but must remain a span of 3 days
     start_time = '2021-11-19T00:00:00Z'
     end_time = '2021-11-22T00:00:00Z'
-
     #old attempt without pagination or cursor,
     #also am not sure which tutorial or stackexchange page made me do count=100
     #search_results = client.search_recent_tweets(q=query_string,  count=100, start_time = start_time, end_time = end_time)
     #starting with items = 150 to be gentle to api as I test the waters
     num_tweets_collected = 150
-    search_results = tweepy.cursor(client.search_recent_tweets, q=query_string, start_time = start_time, end_time = end_time).items(num_tweets_collected)
-    return search_results
+    search_results = client.search_recent_tweets(query=query_string, max_results=15)
+    #TODO uncomment cause this is the line I wanted to work to get over 100 tweets
+    #search_results = tw.cursor(client.search_recent_tweets(query = query_string, start_time = start_time, end_time = end_time)).items(num_tweets_collected)
+
+    search_data = search_results.data
+    oldest_tweet_id = search_results.meta['oldest_id']
+    newest_tweet_id = search_results.meta['oldest_id']
+    print('oldest tweet id:\t' + oldest_tweet_id)
+    print('newest tweet id:\t' + newest_tweet_id)
+
+    return search_data
+
 
 #taken from https://stackoverflow.com/questions/22469713/managing-tweepy-api-search
 def get_twitter_client(credentials_dict):
@@ -62,33 +67,54 @@ def get_twitter_client(credentials_dict):
     consumer_secret = credentials_dict['api_key_secret']
     #this tutorial makes me think I don't need the consumer key nor secret https://dev.to/twitterdev/a-comprehensive-guide-for-using-the-twitter-api-v2-using-tweepy-in-python-15d9
     #note it looks like a great tutorial for other parts of this process too!
-    client = tweepy.Client(bearer_token = bearer_token, consumer_key = consumer_key, consumer_secret = consumer_secret,  wait_on_rate_limit = True)
+    client = tw.Client(bearer_token = bearer_token, consumer_key = consumer_key, consumer_secret = consumer_secret,  wait_on_rate_limit = True)
     return client
+
 
 def get_query_word_list():
     covid_words = ['covid', 'coronavirus']
     vaccine_words = ['vaccine', 'vaccination', 'vax']
     brand_words = ['pfizer', 'moderna', 'janssen', '"johnson and johnson"', '"johnson & johnson"']
     query_word_list = covid_words + vaccine_words + brand_words
+    return query_word_list
     # for the report we can explain that we are skipping astrazeneca since it's not really relevant in canada anymore
     # we can also explain that we searched twitter manually and found
     # that many people used the word vax, so we included it
     #also, anti-vax is used a fair amount on twitter, but the api has - as a
     #seperator, so those will be caught by the vax query
 
+def clean_api_tweets(api_tweets):
+    clean_tweets = {}
+    for api_tweet in api_tweets:
+        #tweet_id = api_tweet.data['id']
+        #tweet_text = api_tweet.data['text']
+        tweet_id = api_tweet.id
+        tweet_text = api_tweet.text
+        tweet_lang = api_tweet.lang
+        tweet_geo = api_tweet.geo
+
+        clean_tweets[tweet_id] = {}
+        clean_tweets[tweet_id]['text'] = tweet_text
+        clean_tweets[tweet_id]['lang'] = tweet_lang
+        clean_tweets[tweet_id]['geo'] = tweet_geo
+        clean_tweets[tweet_id]['id'] = tweet_id
+    a=1
+    return clean_tweets
+
+
 def main():
+    query_word_list = get_query_word_list()
+    query_string = build_query_string(query_word_list)
     # TODO make this valid for multiple OS
     credentials_path = '../data/credentials.json'
     credentials_dict = read_json(credentials_path)
+    print(query_string)
     client = get_twitter_client(credentials_dict)
-    query_word_list = get_query_word_list()
-    query_string = build_query_string(query_word_list)
-    tweets = get_api_tweets(client, query_string)
-
+    api_tweets = get_api_tweets(client, query_string)
+    tweets = clean_api_tweets(api_tweets)
     #TODO make this valid for multiple OS
     tweets_path = '../data/tweets.txt' #might get changed to json later
     write_tweets(tweets, tweets_path)
-
 
     #in report, we'll probably have to mention that we manually remove tweets about say Johnson and Johnson, or Pfizer
     #that weren't about the vaccine
