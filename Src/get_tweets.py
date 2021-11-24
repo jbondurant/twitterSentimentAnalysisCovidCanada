@@ -45,17 +45,7 @@ def get_api_tweets(client, query_string):
     #search_results = client.search_recent_tweets(q=query_string,  count=100, start_time = start_time, end_time = end_time)
     #starting with items = 150 to be gentle to api as I test the waters
     num_tweets_collected = 110
-    # search_results = client.search_recent_tweets(query=query_string, max_results=15,
-    #                                              expansions = ["author_id", "geo.place_id"],
-    #                                              tweet_fields=[
-    #                                                  "author_id", "created_at", "context_annotations",
-    #                                                  "entities", "geo", "id", "lang", "public_metrics",
-    #                                                  "possibly_sensitive", "referenced_tweets", "source", "text"
-    #                                              ],
-    #                                              place_fields=[
-    #                                                  "full_name", "country", "country_code", "geo", "name"
-    #                                              ],start_time = start_time, end_time = end_time
-    #                                              )
+
     #TODO uncomment cause this is the line I wanted to work to get over 100 tweets
     search_results = tw.Paginator(client.search_recent_tweets, query = query_string, expansions = ["author_id", "geo.place_id"],
                                                  tweet_fields=[
