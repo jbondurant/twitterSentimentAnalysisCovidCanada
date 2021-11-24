@@ -45,7 +45,17 @@ def get_api_tweets(client, query_string):
     #search_results = client.search_recent_tweets(q=query_string,  count=100, start_time = start_time, end_time = end_time)
     #starting with items = 150 to be gentle to api as I test the waters
     num_tweets_collected = 150
-    search_results = client.search_recent_tweets(query=query_string, max_results=15)
+    search_results = client.search_recent_tweets(query=query_string, max_results=15,
+                                                 expansions = ["author_id", "geo.place_id"],
+                                                 tweet_fields=[
+                                                     "author_id", "created_at", "context_annotations",
+                                                     "entities", "geo", "id", "lang", "public_metrics",
+                                                     "possibly_sensitive", "referenced_tweets", "source", "text"
+                                                 ],
+                                                 place_fields=[
+                                                     "full_name", "country", "country_code", "geo", "name"
+                                                 ],start_time = start_time, end_time = end_time
+                                                 )
     #TODO uncomment cause this is the line I wanted to work to get over 100 tweets
     #search_results = tw.cursor(client.search_recent_tweets(query = query_string, start_time = start_time, end_time = end_time)).items(num_tweets_collected)
 
@@ -83,7 +93,18 @@ def get_query_word_list():
     #also, anti-vax is used a fair amount on twitter, but the api has - as a
     #seperator, so those will be caught by the vax query
 
-def clean_api_tweets(api_tweets):
+def get_username(tweet_user, client):
+    userMinimal = client.get_user(id=tweet_user)
+    user = userMinimal.data.username
+    return user
+
+def get_user_location(username, client):
+    response = client.get_user(username = username, expansions="pinned_tweet_id",user_fields=["location"])
+    location = response.data.location
+    return location
+
+
+def clean_api_tweets(api_tweets, client):
     clean_tweets = {}
     for api_tweet in api_tweets:
         #tweet_id = api_tweet.data['id']
@@ -91,14 +112,24 @@ def clean_api_tweets(api_tweets):
         tweet_id = api_tweet.id
         tweet_text = api_tweet.text
         tweet_lang = api_tweet.lang
-        tweet_geo = api_tweet.geo
+        tweet_created_at = api_tweet.created_at
+        tweet_user = api_tweet.author_id
+        tweet_username = get_username(tweet_user, client)
+        tweet_user_location = get_user_location(tweet_username, client)
+        tweet_public_metrics = api_tweet.public_metrics
+        tweet_entities = api_tweet.entities
+
 
         clean_tweets[tweet_id] = {}
         clean_tweets[tweet_id]['text'] = tweet_text
+        clean_tweets[tweet_id]['username'] = tweet_username
         clean_tweets[tweet_id]['lang'] = tweet_lang
-        clean_tweets[tweet_id]['geo'] = tweet_geo
+        clean_tweets[tweet_id]['created_at'] = str(tweet_created_at)
+        clean_tweets[tweet_id]['user_location'] = tweet_user_location
         clean_tweets[tweet_id]['id'] = tweet_id
-    a=1
+        clean_tweets[tweet_id]['public_metrics'] = tweet_public_metrics
+        clean_tweets[tweet_id]['entities'] = tweet_entities
+
     return clean_tweets
 
 
@@ -111,7 +142,7 @@ def main():
     print(query_string)
     client = get_twitter_client(credentials_dict)
     api_tweets = get_api_tweets(client, query_string)
-    tweets = clean_api_tweets(api_tweets)
+    tweets = clean_api_tweets(api_tweets, client)
     #TODO make this valid for multiple OS
     tweets_path = '../data/tweets.txt' #might get changed to json later
     write_tweets(tweets, tweets_path)
