@@ -44,28 +44,36 @@ def get_api_tweets(client, query_string):
     #also am not sure which tutorial or stackexchange page made me do count=100
     #search_results = client.search_recent_tweets(q=query_string,  count=100, start_time = start_time, end_time = end_time)
     #starting with items = 150 to be gentle to api as I test the waters
-    num_tweets_collected = 150
-    search_results = client.search_recent_tweets(query=query_string, max_results=15,
-                                                 expansions = ["author_id", "geo.place_id"],
-                                                 tweet_fields=[
-                                                     "author_id", "created_at", "context_annotations",
-                                                     "entities", "geo", "id", "lang", "public_metrics",
-                                                     "possibly_sensitive", "referenced_tweets", "source", "text"
-                                                 ],
-                                                 place_fields=[
-                                                     "full_name", "country", "country_code", "geo", "name"
-                                                 ],start_time = start_time, end_time = end_time
-                                                 )
+    num_tweets_collected = 110
+    # search_results = client.search_recent_tweets(query=query_string, max_results=15,
+    #                                              expansions = ["author_id", "geo.place_id"],
+    #                                              tweet_fields=[
+    #                                                  "author_id", "created_at", "context_annotations",
+    #                                                  "entities", "geo", "id", "lang", "public_metrics",
+    #                                                  "possibly_sensitive", "referenced_tweets", "source", "text"
+    #                                              ],
+    #                                              place_fields=[
+    #                                                  "full_name", "country", "country_code", "geo", "name"
+    #                                              ],start_time = start_time, end_time = end_time
+    #                                              )
     #TODO uncomment cause this is the line I wanted to work to get over 100 tweets
-    #search_results = tw.cursor(client.search_recent_tweets(query = query_string, start_time = start_time, end_time = end_time)).items(num_tweets_collected)
+    search_results = tw.Paginator(client.search_recent_tweets, query = query_string, expansions = ["author_id", "geo.place_id"],
+                                                 tweet_fields=[
+                                                      "author_id", "created_at", "context_annotations",
+                                                      "entities", "geo", "id", "lang", "public_metrics",
+                                                      "possibly_sensitive", "referenced_tweets", "source", "text"
+                                                  ],
+                                                  place_fields=[
+                                                      "full_name", "country", "country_code", "geo", "name"
+                                                  ],start_time = start_time, end_time = end_time, max_results=100).flatten(num_tweets_collected)
 
-    search_data = search_results.data
-    oldest_tweet_id = search_results.meta['oldest_id']
-    newest_tweet_id = search_results.meta['oldest_id']
-    print('oldest tweet id:\t' + oldest_tweet_id)
-    print('newest tweet id:\t' + newest_tweet_id)
+    search_results_list = list(search_results)
+    #oldest_tweet_id = search_results.meta['oldest_id']
+    #newest_tweet_id = search_results.meta['oldest_id']
+    #print('oldest tweet id:\t' + oldest_tweet_id)
+    #print('newest tweet id:\t' + newest_tweet_id)
 
-    return search_data
+    return search_results_list
 
 
 #taken from https://stackoverflow.com/questions/22469713/managing-tweepy-api-search
@@ -119,7 +127,6 @@ def clean_api_tweets(api_tweets, client):
         tweet_public_metrics = api_tweet.public_metrics
         tweet_entities = api_tweet.entities
 
-
         clean_tweets[tweet_id] = {}
         clean_tweets[tweet_id]['text'] = tweet_text
         clean_tweets[tweet_id]['username'] = tweet_username
@@ -129,7 +136,6 @@ def clean_api_tweets(api_tweets, client):
         clean_tweets[tweet_id]['id'] = tweet_id
         clean_tweets[tweet_id]['public_metrics'] = tweet_public_metrics
         clean_tweets[tweet_id]['entities'] = tweet_entities
-
     return clean_tweets
 
 
