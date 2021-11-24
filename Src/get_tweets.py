@@ -40,13 +40,9 @@ def get_api_tweets(client, query_string):
     # dates can be changed, but must remain a span of 3 days
     start_time = '2021-11-19T00:00:00Z'
     end_time = '2021-11-22T00:00:00Z'
-    #old attempt without pagination or cursor,
-    #also am not sure which tutorial or stackexchange page made me do count=100
-    #search_results = client.search_recent_tweets(q=query_string,  count=100, start_time = start_time, end_time = end_time)
-    #starting with items = 150 to be gentle to api as I test the waters
+    #starting with items = 110 to be gentle to api as I test the waters
     num_tweets_collected = 110
 
-    #TODO uncomment cause this is the line I wanted to work to get over 100 tweets
     search_results = tw.Paginator(client.search_recent_tweets, query = query_string, expansions = ["author_id", "geo.place_id"],
                                                  tweet_fields=[
                                                       "author_id", "created_at", "context_annotations",
@@ -58,11 +54,6 @@ def get_api_tweets(client, query_string):
                                                   ],start_time = start_time, end_time = end_time, max_results=100).flatten(num_tweets_collected)
 
     search_results_list = list(search_results)
-    #oldest_tweet_id = search_results.meta['oldest_id']
-    #newest_tweet_id = search_results.meta['oldest_id']
-    #print('oldest tweet id:\t' + oldest_tweet_id)
-    #print('newest tweet id:\t' + newest_tweet_id)
-
     return search_results_list
 
 
