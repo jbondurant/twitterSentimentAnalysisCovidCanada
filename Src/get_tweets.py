@@ -168,6 +168,10 @@ def main():
     #edit: that being said, the amount of canadian tweets will vary wildly, so you need to do like sample 10
     #then if 1 of the tweets is canadian add it to tweets for timeframe, until you reach the weigthed
     # quota of canadian tweets for that hour?
+
+    #edit 2: new sampling methodology, take 20 tweets every even minutes,
+    #that gives us 86400 tweets, that are properly weighted for more active hours.
+    #there might be a bit of overlap in tweet collection, but duplicate tweets by id can easily be removed later
     start_time = '2021-11-19T00:00:00Z'
     end_time = '2021-11-22T00:00:00Z'
     num_tweets_collected = 10
