@@ -1,5 +1,7 @@
 import tweepy as tw
 import json
+from filter_canadian_tweets import is_tweet_canadian
+
 
 def read_json(credentials_path):
     with open(credentials_path, 'r') as fh:
@@ -123,15 +125,17 @@ def get_user_location(username, client):
 def clean_api_tweets(api_tweets, client):
     clean_tweets = {}
     for api_tweet in api_tweets:
-        #tweet_id = api_tweet.data['id']
-        #tweet_text = api_tweet.data['text']
+
+        tweet_user = api_tweet.author_id
+        tweet_username = get_username(tweet_user, client)
+        tweet_user_location = get_user_location(tweet_username, client)
+        if not is_tweet_canadian(tweet_user_location):
+            continue
+
         tweet_id = api_tweet.id
         tweet_text = api_tweet.text
         tweet_lang = api_tweet.lang
         tweet_created_at = api_tweet.created_at
-        tweet_user = api_tweet.author_id
-        tweet_username = get_username(tweet_user, client)
-        tweet_user_location = get_user_location(tweet_username, client)
         tweet_public_metrics = api_tweet.public_metrics
         #tweet_entities = api_tweet.entities
 
