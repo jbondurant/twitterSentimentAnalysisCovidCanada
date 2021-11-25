@@ -1,4 +1,4 @@
-
+import re
 
 
 #province/territory abbreviations from https://www150.statcan.gc.ca/n1/pub/92-195-x/2011001/geo/prov/tbl/tbl8-eng.htm
@@ -21,15 +21,13 @@ def get_canadian_locations_exact():
     t1 = ['yt', 'yn']
     t2 = ['nwt', 'tno', 'nt']
     t3 = ['nvt', 'nt', 'nu']
-    #notice nt both in t2 and t3
+    #notice nt both in t2 and t3, not important unless we weight sample by provinces, which is a bit too fancy
 
     all_canadian_geo = p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9 + p10
     all_canadian_geo += t1 + t2 + t3 + country
     return all_canadian_geo
 
-#make sure - are replaced with spaces when comparing
-#hmm, some tweets were cut short like Grand Falls-Windsor, Newfoundl cause of
-#the 30 char limit
+#hmm, some tweets were cut short like Grand Falls-Windsor, Newfoundl cause of the 30 char limit
 def get_canadian_locations_sub():
     country = ['canada']
     p1 = ['newfoundland', 'labrador', 'terre neuve', 'labrador']
@@ -50,8 +48,27 @@ def get_canadian_locations_sub():
     all_canadian_geo += t1 + t2 + t3 + country
     return all_canadian_geo
 
+def is_tweet_canadian(tweet_loc):
+    if tweet_loc == None:
+        return False
+    tweet_loc = tweet_loc.lower()
+    clean_tweet_loc = re.sub("[^0-9a-zA-Z]+", " ", tweet_loc)#for things like terre-neuve
+    tweet_loc_words = clean_tweet_loc.split()
+    can_locs_sub = get_canadian_locations_sub()
+    can_locs_exact = get_canadian_locations_exact()
+
+    for can_loc_sub in can_locs_sub:
+        if can_loc_sub in clean_tweet_loc:
+            return True
+    for can_loc_exact in can_locs_exact:
+        for tweet_word in tweet_loc_words:
+            if can_loc_exact == tweet_word:
+                return True
+    return False
+
 def main():
-    a=1
+    tweet_loc = 'London ON'
+    print(is_tweet_canadian(tweet_loc))
 
 
 if __name__ == '__main__':
