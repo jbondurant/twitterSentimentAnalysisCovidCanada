@@ -1,6 +1,8 @@
 import tweepy as tw
 import json
 from filter_canadian_tweets import is_tweet_canadian
+from produce_sampling_strat import get_span_minutes, span_to_splits
+
 
 
 def read_json(credentials_path):
@@ -70,7 +72,7 @@ def get_api_tweets(client, query_string, start_time, end_time, num_tweets_collec
         search_results_list = list(search_results)
     else:
         #keep this count line for future purposes
-        abc = client.get_recent_tweets_count(query=query_string, granularity = "hour")
+        abc = client.get_recent_tweets_count(query=query_string, granularity = "day")
         abc2 = 1
         search_results = client.search_recent_tweets(query=query_string, expansions=["author_id", "geo.place_id"],
                                                       tweet_fields=[
@@ -160,8 +162,10 @@ def main():
     print(query_string)
     client = get_twitter_client(credentials_dict)
 
-    #TODO make method that takes this 3 day period and splits it into 2minute periods and samples 30 tweets each time
-    #this has the disadantage perhaps of making tweets in off hours too (relatively) important, but you can't
+
+
+    #current sampling approach problems
+    #approach has the disadantage perhaps of making tweets in off hours too (relatively) important, but you can't
     #sample perfectly anyways
     #this sample will possibly only collect tweets after 30 seconds of each minute, but that sample should be
     #representative of the tweets between 0s and 30s of each minute
@@ -175,19 +179,46 @@ def main():
 
     #edit 2: new sampling methodology, take 20 tweets every even minutes,
     #that gives us 86400 tweets, that are properly weighted for more active hours.
-    #there might be a bit of overlap in tweet collection, but duplicate tweets by id can easily be removed later
-    start_time = '2021-11-19T00:00:00Z'
-    end_time = '2021-11-22T00:00:00Z'
-    num_tweets_collected = 10
-    #TODO change this call
-    api_tweets = get_api_tweets(client, query_string, start_time, end_time, num_tweets_collected)
 
-    tweets = clean_api_tweets(api_tweets, client)
+    # test1: sampe every n minutes  = 360
+    # start time = '2021-11-22T00:00:00Z'
+    # end time = '2021-11-25T00:00:00Z'
+    # start_time_shift = 120
+    # num_tweets_collected_per_batch = 20
+    #started fri nov 26 2:34 battery to <2:37
+    #got 14 manually check canadian tweets
+
+    # test2: sampe every n minutes  = 8
+    # start time = '2021-11-22T00:00:00Z'
+    # end time = '2021-11-25T00:00:00Z'
+    # start_time_shift = 120
+    # num_tweets_collected_per_batch = 20
+
     #TODO make this valid for multiple OS
-    tweets_path = '../data/tweets.json'
-    write_tweets(tweets, tweets_path)
-    location_path = '../data/locations.txt'
-    write_locations(tweets, location_path)
+    tweets_path = '../data/tweetsTest1.json'
+    location_path = '../data/locationsTest1.txt'
+
+
+    start_time = '2021-11-22T00:00:00Z'
+    end_time = '2021-11-25T00:00:00Z'
+    span_minutes = get_span_minutes(start_time, end_time)
+    sample_every_n_minutes = 360
+    num_sample_batches = int((span_minutes / sample_every_n_minutes) + 1)
+    start_time_shift = 120  # this puts the start time 2 minutes before the end time
+    start_end_time_splits = span_to_splits(start_time, end_time, num_sample_batches, start_time_shift)
+
+    #start_time_end_times_list = [('2021-11-25T00:00:00Z','2021-11-26T00:00:00Z'), ('2021-11-24T00:00:00Z','2021-11-25T00:00:00Z')]
+    num_tweets_collected_per_batch = 20
+
+    all_tweets = {}
+    for start_time, end_time in start_end_time_splits:
+        api_tweets = get_api_tweets(client, query_string, start_time, end_time, num_tweets_collected_per_batch)
+        tweets = clean_api_tweets(api_tweets, client)
+        all_tweets.update(tweets)
+
+
+    write_tweets(all_tweets, tweets_path)
+    write_locations(all_tweets, location_path)
 
     #in report, we'll probably have to mention that we manually remove tweets about say Johnson and Johnson, or Pfizer
     #that weren't about the vaccine
