@@ -27,8 +27,8 @@ def span_to_splits(start_time, end_time, num_samples, start_time_shift):
         end_split_number = round(start_time_number + i * step_size, 0)
         start_split_number = end_split_number - start_time_shift
         if i == 0:
-            end_split_number += 120
-            start_split_number += 120
+            end_split_number += 240
+            start_split_number += 240
         end_split_time = datetime.utcfromtimestamp(end_split_number)
         start_split_time = datetime.utcfromtimestamp(start_split_number)
 
