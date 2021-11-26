@@ -28,12 +28,11 @@ def get_canadian_locations_exact():
     return all_canadian_geo
 
 def get_californian_cities_exact():
-    san = ['san', 'santa']
-    cali_cities = san
+    cali_cities = ['san', 'santa', 'rio']
     return cali_cities
 
 def get_californian_cities_sub():
-    #I don't think i can put county here as of now.
+    #I don't think i can put county here as of now. perhaps people say stuff like york county, ontario
     popular = ['hollywood']
 
     cities_1_10 = ['los angeles', 'fresno', 'long beach', 'oakland', 'bakersfield', 'anaheim']
