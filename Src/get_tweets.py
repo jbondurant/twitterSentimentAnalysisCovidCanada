@@ -2,6 +2,7 @@ import tweepy as tw
 import json
 from filter_canadian_tweets import is_tweet_canadian
 from produce_sampling_strat import get_span_minutes, span_to_splits
+import time
 
 
 
@@ -180,29 +181,41 @@ def main():
     #edit 2: new sampling methodology, take 20 tweets every even minutes,
     #that gives us 86400 tweets, that are properly weighted for more active hours.
 
-    # test1: sampe every n minutes  = 360
+    # test1: sample every n minutes  = 360
     # start time = '2021-11-22T00:00:00Z'
     # end time = '2021-11-25T00:00:00Z'
     # start_time_shift = 120
     # num_tweets_collected_per_batch = 20
-    #started fri nov 26 2:34 battery to <2:37
+    #started fri nov 26 3:02 battery to 3:05
+    #this is 240 international tweets
     #got 14 manually check canadian tweets
+    #got 16 tweets
 
-    # test2: sampe every n minutes  = 8
+    # test2: sample every n minutes  = 8
     # start time = '2021-11-22T00:00:00Z'
     # end time = '2021-11-25T00:00:00Z'
     # start_time_shift = 120
     # num_tweets_collected_per_batch = 20
+    #started fri nov 26 3:11 battery to
+    #this is 10800 international tweets
+    #got  manually check canadian tweets
+    #got  tweets
+    # got Rate limit exceeded. Sleeping for 330 seconds. at 3:14
+    # got Rate limit exceeded. Sleeping for 794 seconds. at 3:24
+    # got Rate limit exceeded. Sleeping for 788 seconds. at 3:36, dev api at 3314 tweets pulled
+    # got Rate limit exceeded. Sleeping for 795 seconds. at 3:50 dev api at 3612 tweets pulled
+    #terminated this test and added manual sleep of 3 seconds between each batch , to stay under
+    # the 300 calls per 15 min for users, (and under 450 calls per 15 min for tweet searches)
 
     #TODO make this valid for multiple OS
-    tweets_path = '../data/tweetsTest1.json'
-    location_path = '../data/locationsTest1.txt'
+    tweets_path = '../data/tweetsTest2.json'
+    location_path = '../data/locationsTest2.txt'
 
 
     start_time = '2021-11-22T00:00:00Z'
     end_time = '2021-11-25T00:00:00Z'
     span_minutes = get_span_minutes(start_time, end_time)
-    sample_every_n_minutes = 360
+    sample_every_n_minutes = 8
     num_sample_batches = int((span_minutes / sample_every_n_minutes) + 1)
     start_time_shift = 120  # this puts the start time 2 minutes before the end time
     start_end_time_splits = span_to_splits(start_time, end_time, num_sample_batches, start_time_shift)
@@ -211,10 +224,14 @@ def main():
     num_tweets_collected_per_batch = 20
 
     all_tweets = {}
+    num_batches_processed = 0
     for start_time, end_time in start_end_time_splits:
         api_tweets = get_api_tweets(client, query_string, start_time, end_time, num_tweets_collected_per_batch)
         tweets = clean_api_tweets(api_tweets, client)
         all_tweets.update(tweets)
+        num_batches_processed += 1
+        print(num_batches_processed)
+        #time.sleep(4)
 
 
     write_tweets(all_tweets, tweets_path)
