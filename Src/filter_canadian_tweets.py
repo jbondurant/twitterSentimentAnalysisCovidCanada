@@ -27,6 +27,23 @@ def get_canadian_locations_exact():
     all_canadian_geo += t1 + t2 + t3 + country
     return all_canadian_geo
 
+def get_californian_cities_exact():
+    san = ['san', 'santa']
+    cali_cities = san
+    return cali_cities
+
+def get_californian_cities_sub():
+    #I don't think i can put county here as of now.
+    popular = ['hollywood']
+
+    cities_1_10 = ['los angeles', 'fresno', 'long beach', 'oakland', 'bakersfield', 'anaheim']
+    cities_11_20 = ['stockton', 'riverside', 'irvine', 'chula vista', 'fremont', 'modesto']
+    cities_21_26 = ['fontana', 'oxnard', 'huntington beach', 'glendale', 'elk grove', ]
+    #skipped 27 since it's ontario california lol
+    cities_28_38 = ['rancho cucamonga', 'oceanside', 'lancaster', 'garden grove', 'salinas', 'hayward', 'corona', 'sunnyvale', 'pomona', 'escondido']
+    cali_cities = popular + cities_1_10 + cities_11_20 + cities_21_26 + cities_28_38
+    return cali_cities
+
 #hmm, some tweets were cut short like Grand Falls-Windsor, Newfoundl cause of the 30 char limit
 def get_canadian_locations_sub():
     country = ['canada']
@@ -56,6 +73,16 @@ def is_tweet_canadian(tweet_loc):
     tweet_loc_words = clean_tweet_loc.split()
     can_locs_sub = get_canadian_locations_sub()
     can_locs_exact = get_canadian_locations_exact()
+    cali_cities_exact = get_californian_cities_exact()
+    cali_cities_sub = get_californian_cities_sub()
+
+    for cali_city_sub in cali_cities_sub:
+        if cali_city_sub in clean_tweet_loc:
+            return False
+    for cali_cities_exact in cali_cities_exact:
+        for tweet_word in tweet_loc_words:
+            if cali_cities_exact == tweet_word:
+                return False
 
     for can_loc_sub in can_locs_sub:
         if can_loc_sub in clean_tweet_loc:
@@ -67,7 +94,7 @@ def is_tweet_canadian(tweet_loc):
     return False
 
 def main():
-    tweet_loc = 'London ON'
+    tweet_loc = 'London ON santa abc'
     print(is_tweet_canadian(tweet_loc))
 
 
