@@ -207,21 +207,31 @@ def main():
     #terminated this test and added manual sleep of 3 seconds between each batch , to stay under
     # the 300 calls per 15 min for users, (and under 450 calls per 15 min for tweet searches)
 
+    # test3: sample every n minutes  = 96
+    # start time = '2021-11-22T00:00:00Z'
+    # end time = '2021-11-25T00:00:00Z'
+    # start_time_shift = 120
+    # num_tweets_collected_per_batch = 100
+    # started fri nov 26 3:11 battery to
+    # this is 4500 international tweets
+    # started at dev api at 4012 tweets pulled
+    #terminated once sleeping for 822 secons appeared
+
     #TODO make this valid for multiple OS
-    tweets_path = '../data/tweetsTest2.json'
-    location_path = '../data/locationsTest2.txt'
+    tweets_path = '../data/tweetsTest3.json'
+    location_path = '../data/locationsTest3.txt'
 
 
     start_time = '2021-11-22T00:00:00Z'
     end_time = '2021-11-25T00:00:00Z'
     span_minutes = get_span_minutes(start_time, end_time)
-    sample_every_n_minutes = 8
+    sample_every_n_minutes = 96
     num_sample_batches = int((span_minutes / sample_every_n_minutes) + 1)
     start_time_shift = 120  # this puts the start time 2 minutes before the end time
     start_end_time_splits = span_to_splits(start_time, end_time, num_sample_batches, start_time_shift)
 
     #start_time_end_times_list = [('2021-11-25T00:00:00Z','2021-11-26T00:00:00Z'), ('2021-11-24T00:00:00Z','2021-11-25T00:00:00Z')]
-    num_tweets_collected_per_batch = 20
+    num_tweets_collected_per_batch = 100
 
     all_tweets = {}
     num_batches_processed = 0
@@ -231,7 +241,7 @@ def main():
         all_tweets.update(tweets)
         num_batches_processed += 1
         print(num_batches_processed)
-        #time.sleep(4)
+        time.sleep(3)
 
 
     write_tweets(all_tweets, tweets_path)
