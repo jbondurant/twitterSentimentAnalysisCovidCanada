@@ -89,15 +89,10 @@ def get_api_tweets(client, query_string, start_time, end_time, num_tweets_collec
     return search_results_list
 
 
-#taken from https://stackoverflow.com/questions/22469713/managing-tweepy-api-search
 def get_twitter_client(credentials_dict):
-    #hopefully I understand the nomenclature here
-    #nomenclature equivalencies taken from https://stackoverflow.com/questions/66156958/how-to-acess-tweets-with-bearer-token-using-tweepy-in-python
     bearer_token = credentials_dict['bearer_token']
     consumer_key = credentials_dict['api_key']
     consumer_secret = credentials_dict['api_key_secret']
-    #this tutorial makes me think I don't need the consumer key nor secret https://dev.to/twitterdev/a-comprehensive-guide-for-using-the-twitter-api-v2-using-tweepy-in-python-15d9
-    #note it looks like a great tutorial for other parts of this process too!
     client = tw.Client(bearer_token = bearer_token, consumer_key = consumer_key, consumer_secret = consumer_secret,  wait_on_rate_limit = True)
     return client
 
