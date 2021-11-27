@@ -217,31 +217,45 @@ def main():
     # started at dev api at 4012 tweets pulled
     #terminated once sleeping for 822 secons appeared
 
+    #start_time = '2021-11-23T00:00:00Z'
+    #end_time = '2021-11-26T00:00:00Z'
+
+    #test4 started at 5:55pm
+
+    start_time = '2021-11-24T00:00:00Z'
+    end_time = '2021-11-24T04:00:00Z'
+    sample_every_n_minutes = 8
+    num_tweets_collected_per_batch = 60
+
     #TODO make this valid for multiple OS
-    tweets_path = '../data/tweetsTest3.json'
-    location_path = '../data/locationsTest3.txt'
+    tweets_path = '../data/sample' + str(num_tweets_collected_per_batch) + 'every' + str(sample_every_n_minutes) + 'min/tweets/' + start_time + '-to-' + end_time  + '.json'
+    location_path = '../data/sample' + str(num_tweets_collected_per_batch) + 'every' + str(sample_every_n_minutes) + 'min/locations/' + start_time + '-to-' + end_time  + '.txt'
 
-
-    start_time = '2021-11-22T00:00:00Z'
-    end_time = '2021-11-25T00:00:00Z'
     span_minutes = get_span_minutes(start_time, end_time)
-    sample_every_n_minutes = 96
+
     num_sample_batches = int((span_minutes / sample_every_n_minutes) + 1)
-    start_time_shift = 120  # this puts the start time 2 minutes before the end time
+    print('num sample batches:\t' + str(num_sample_batches))
+    start_time_shift = 240  # this puts the start time 4 minutes before the end time
     start_end_time_splits = span_to_splits(start_time, end_time, num_sample_batches, start_time_shift)
 
     #start_time_end_times_list = [('2021-11-25T00:00:00Z','2021-11-26T00:00:00Z'), ('2021-11-24T00:00:00Z','2021-11-25T00:00:00Z')]
-    num_tweets_collected_per_batch = 100
 
     all_tweets = {}
+
+
+    sleep_time_constant = 3 * num_tweets_collected_per_batch + 20
+    print('sleep time constant:\t' + str(sleep_time_constant))
+
+    estimated_run_time_min = sleep_time_constant * num_sample_batches / 60
+    print('estimated run time min:\t' + str(estimated_run_time_min))
     num_batches_processed = 0
     for start_time, end_time in start_end_time_splits:
         api_tweets = get_api_tweets(client, query_string, start_time, end_time, num_tweets_collected_per_batch)
         tweets = clean_api_tweets(api_tweets, client)
         all_tweets.update(tweets)
         num_batches_processed += 1
-        print(num_batches_processed)
-        time.sleep(3)
+        print('num batches processed:\t' + str(num_batches_processed))
+        time.sleep(sleep_time_constant)
 
 
     write_tweets(all_tweets, tweets_path)
