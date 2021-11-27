@@ -188,6 +188,7 @@ def main():
     #7,260 Tweets pulled after batch 2
     #ended at 10:29
     #17,972 Tweets pulled
+    #564 possibly canadian tweets
 
     start_time = '2021-11-24T00:00:00Z'
     end_time = '2021-11-25T00:00:00Z'
@@ -228,8 +229,7 @@ def main():
 
     #in report, we'll probably have to mention that we manually remove tweets about say Johnson and Johnson, or Pfizer
     #that weren't about the vaccine
-    #this means we collect enough tweets (1500 should be more than enough) so we can have 1000 relevant tweets
-    #also, if we can filter by location, then we might need to collect like 50000 tweets
+
 
 
 
