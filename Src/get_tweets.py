@@ -172,53 +172,25 @@ def main():
     #edit: that being said, the amount of canadian tweets will vary wildly, so you need to do like sample 10
     #then if 1 of the tweets is canadian add it to tweets for timeframe, until you reach the weigthed
     # quota of canadian tweets for that hour?
+    #edit 2: granulariity is wrong, since the posting time of the whole world likely doesn't reflect the posting times of canadians
 
-    #edit 2: new sampling methodology, take 20 tweets every even minutes,
-    #that gives us 86400 tweets, that are properly weighted for more active hours.
 
-    # test1: sample every n minutes  = 360
-    # start time = '2021-11-22T00:00:00Z'
-    # end time = '2021-11-25T00:00:00Z'
-    # start_time_shift = 120
-    # num_tweets_collected_per_batch = 20
-    #started fri nov 26 3:02 battery to 3:05
-    #this is 240 international tweets
-    #got 14 manually check canadian tweets
-    #got 16 tweets
-
-    # test2: sample every n minutes  = 8
-    # start time = '2021-11-22T00:00:00Z'
-    # end time = '2021-11-25T00:00:00Z'
-    # start_time_shift = 120
-    # num_tweets_collected_per_batch = 20
-    #started fri nov 26 3:11 battery to
-    #this is 10800 international tweets
-    #got  manually check canadian tweets
-    #got  tweets
-    # got Rate limit exceeded. Sleeping for 330 seconds. at 3:14
-    # got Rate limit exceeded. Sleeping for 794 seconds. at 3:24
-    # got Rate limit exceeded. Sleeping for 788 seconds. at 3:36, dev api at 3314 tweets pulled
-    # got Rate limit exceeded. Sleeping for 795 seconds. at 3:50 dev api at 3612 tweets pulled
-    #terminated this test and added manual sleep of 3 seconds between each batch , to stay under
-    # the 300 calls per 15 min for users, (and under 450 calls per 15 min for tweet searches)
-
-    # test3: sample every n minutes  = 96
-    # start time = '2021-11-22T00:00:00Z'
-    # end time = '2021-11-25T00:00:00Z'
-    # start_time_shift = 120
-    # num_tweets_collected_per_batch = 100
-    # started fri nov 26 3:11 battery to
-    # this is 4500 international tweets
-    # started at dev api at 4012 tweets pulled
-    #terminated once sleeping for 822 secons appeared
-
-    #start_time = '2021-11-23T00:00:00Z'
-    #end_time = '2021-11-26T00:00:00Z'
+    #start_time = '2021-11-24T00:00:00Z'
+    #end_time = '2021-11-27T00:00:00Z'
 
     #test4 started at 5:55pm
 
+    #test5 started at 9:02pm
+    #26 batches at 10:33pm
+    #done by 11:09
+
+    #attemp1 started at 11:35 nov 26
+    #7,260 Tweets pulled after batch 2
+    #ended at 10:29
+    #17,972 Tweets pulled
+
     start_time = '2021-11-24T00:00:00Z'
-    end_time = '2021-11-24T04:00:00Z'
+    end_time = '2021-11-25T00:00:00Z'
     sample_every_n_minutes = 8
     num_tweets_collected_per_batch = 60
 
@@ -232,8 +204,6 @@ def main():
     print('num sample batches:\t' + str(num_sample_batches))
     start_time_shift = 240  # this puts the start time 4 minutes before the end time
     start_end_time_splits = span_to_splits(start_time, end_time, num_sample_batches, start_time_shift)
-
-    #start_time_end_times_list = [('2021-11-25T00:00:00Z','2021-11-26T00:00:00Z'), ('2021-11-24T00:00:00Z','2021-11-25T00:00:00Z')]
 
     all_tweets = {}
 
