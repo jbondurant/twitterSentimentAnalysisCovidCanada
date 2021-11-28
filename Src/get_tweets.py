@@ -73,8 +73,8 @@ def get_api_tweets(client, query_string, start_time, end_time, num_tweets_collec
         search_results_list = list(search_results)
     else:
         #keep this count line for future purposes
-        abc = client.get_recent_tweets_count(query=query_string, granularity = "day")
-        abc2 = 1
+        #abc = client.get_recent_tweets_count(query=query_string, granularity = "day")
+        #abc2 = 1
         search_results = client.search_recent_tweets(query=query_string, expansions=["author_id", "geo.place_id"],
                                                       tweet_fields=[
                                                           "author_id", "created_at", "context_annotations",
@@ -178,20 +178,26 @@ def main():
     #start_time = '2021-11-24T00:00:00Z'
     #end_time = '2021-11-27T00:00:00Z'
 
-    #test4 started at 5:55pm
-
-    #test5 started at 9:02pm
-    #26 batches at 10:33pm
-    #done by 11:09
-
     #attemp1 started at 11:35 nov 26
+    # start_time = '2021-11-24T00:00:00Z'
+    # end_time = '2021-11-25T00:00:00Z'
     #7,260 Tweets pulled after batch 2
-    #ended at 10:29
-    #17,972 Tweets pulled
+    #ended at 10:29am
+    #17,972 Tweets pulled at end
     #564 possibly canadian tweets
+    #424 canadian tweets
 
-    start_time = '2021-11-24T00:00:00Z'
-    end_time = '2021-11-25T00:00:00Z'
+    #attempt 2 failed
+
+    #attemp3 started at like 6am nov 28
+    # start_time = '2021-11-25T00:00:00Z'
+    # end_time = '2021-11-25T12:00:00Z'
+    #ended at 12:27pm nov 28
+    # Tweets pulled 29171
+    # possibly canadian tweets
+
+    start_time = '2021-11-25T12:00:00Z'
+    end_time = '2021-11-26T00:00:00Z'
     sample_every_n_minutes = 8
     num_tweets_collected_per_batch = 60
 
@@ -209,7 +215,7 @@ def main():
     all_tweets = {}
 
 
-    sleep_time_constant = 3 * num_tweets_collected_per_batch + 20
+    sleep_time_constant = 3 * num_tweets_collected_per_batch + 40
     print('sleep time constant:\t' + str(sleep_time_constant))
 
     estimated_run_time_min = sleep_time_constant * num_sample_batches / 60
