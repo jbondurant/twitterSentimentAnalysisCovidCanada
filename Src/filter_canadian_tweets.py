@@ -46,7 +46,13 @@ def all_wrong_locations_sub():
 def get_bad_locations_sub():
     popular_list = ['on earth', 'on the couch', 'yt channel', 'notifications on', 'on both sides', 'ca usa', 'ca uk', 'us canada', 'and canada']
     popular_list += ['on my', 'on a', 'on an', 'on the', 'on your', 'tweets on', 'can travel', 'lawse angelees', 'earth between mexico', 'northern ireland']
-    popular_list += ['walton on thames', 'ochten', 'you can', 'qc ncr', 'Canada   US', 'Freedom Bunker']
+    popular_list += ['walton on thames', 'ochten', 'you can', 'qc ncr', 'canada   us', 'freedom bunker', 'can dm me']
+    popular_list += ['on koo as', 'we can do', 'on yo mama', 'nu zillun', 'stoke on trent', 'southend on sea', 'i can be']
+    popular_list += ['or canada', 'on twitter', 'on holiday', 'peace on', 'turn on', 'east bay, ca', 'bay area ca', 'ca  ignoring']
+    popular_list += ['seen on', 'on nik', 'free state of ca', 'barrio echo parque', 'bay area  ca', 'nb muse', 'bc  fl', 'on planet']
+    popular_list += ['on tour', 'where i can', 'mountain view  ca', 'canada   belarus', 'westeros  ca', 'lost angeles', 'ca united states']
+    popular_list += ['wurundjeri land', 'land   naarm', 'yaegl land', 'dungeon ca', 'uk  nl', 'london uk', 'on hold', 'us  uk']
+    popular_list += ['on this planet', 'fish on', 'ne hampshire']
     popular = set(popular_list)
     return popular
 
@@ -62,11 +68,13 @@ def get_nebraska_cities_sub():
 
 def get_californian_cities_sub():
     #I don't think i can put county here as of now. perhaps people say stuff like york county, ontario
-    popular = ['hollywood', 'beverly hills', 'stanford', 'lake forest', 'newport beach', 'sacramento', 'bermuda dunes', 'laguna niguel', 'buena park', 'galt', 'sonora']
-    popular += ['palm springs', 'malibu', 'laguna beach', 'palm_beach', 'hermosa beach', 'manhattan beach', 'daly city', 'prunedale', 'cathedral city', 'chino hills']
-    popular += ['hesperia', 'whittier', 'sonoma county', 'pacific palisades', 'half moon bay', 'north vallejo', 'palo alto', 'davis', 'encinitas', 'chesapeake', 'silicon valley']
-    popular += ['palm desert', 'santee', 'sierra madre', 'menifee', 'simi valley', 'marina del rey', 'moreno valley', 'buena park', 'citrus heights', 'hmb ca', 'valencia']
-
+    popular = ['hollywood', 'beverly hills', 'stanford', 'lake forest', 'newport beach', 'sacramento', 'buena park', 'galt', 'sonora']
+    popular += ['laguna beach', 'palm_beach', 'hermosa beach', 'manhattan beach', 'daly city', 'prunedale', 'cathedral city', 'chino hills', 'placerville']
+    popular += ['sonoma county', 'pacific palisades', 'half moon bay', 'north vallejo', 'palo alto', 'davis', 'encinitas', 'chesapeake', 'silicon valley']
+    popular += ['sierra madre', 'menifee', 'simi valley', 'marina del rey', 'moreno valley', 'buena park', 'citrus heights', 'hmb ca', 'valencia']
+    popular += ['palm desert', 'santee', 'hesperia', 'whittier', 'palm springs', 'malibu', 'bermuda dunes', 'laguna niguel', 'coachella valley']
+    popular += ['marina  ca', 'mountain view  ca', 'capitola  ca', 'freedom  ca', 'camarillo', 'woodland hills', 'palos verdes', 'culver city']
+    popular += ['lake tahoe', 'la jolla', 'perris', 'mission viejo']
     cities_1_10 = ['los angeles', 'fresno', 'long beach', 'oakland', 'bakersfield', 'anaheim']
     cities_11_20 = ['stockton', 'riverside', 'irvine', 'chula vista', 'fremont', 'modesto']
     cities_21_26 = ['fontana', 'oxnard', 'huntington beach', 'glendale', 'elk grove', ]
@@ -78,6 +86,7 @@ def get_californian_cities_sub():
     cali_cities_list = popular + cities_1_10 + cities_11_20 + cities_21_26 + cities_28_38 + cities_39_50 + cities_51_60
     cali_cities = set(cali_cities_list)
     return cali_cities
+    #inglewood too
 
 #hmm, some tweets were cut short like Grand Falls-Windsor, Newfoundl cause of the 30 char limit
 def get_canadian_locations_sub():
@@ -116,7 +125,6 @@ def is_tweet_canadian(tweet_loc):
     can_locs_sub = get_canadian_locations_sub()
     can_locs_exact = get_canadian_locations_exact()
     cali_cities_exact = get_californian_cities_exact()
-    cali_cities_sub = get_californian_cities_sub()
 
     for wrong_loc_sub in all_wrong_locations_sub():
         if wrong_loc_sub in clean_tweet_loc:
