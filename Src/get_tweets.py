@@ -174,30 +174,13 @@ def main():
     # quota of canadian tweets for that hour?
     #edit 2: granulariity is wrong, since the posting time of the whole world likely doesn't reflect the posting times of canadians
 
+    #3 day span
+    #start time is '2021-11-24T00:00:00Z'
+    #end time is '2021-11-27T00:00:00Z'
 
-    #start_time = '2021-11-24T00:00:00Z'
-    #end_time = '2021-11-27T00:00:00Z'
 
-    #attemp1 started at 11:35 nov 26
-    # start_time = '2021-11-24T00:00:00Z'
-    # end_time = '2021-11-25T00:00:00Z'
-    #7,260 Tweets pulled after batch 2
-    #ended at 10:29am
-    #17,972 Tweets pulled at end
-    #564 possibly canadian tweets
-    #424 canadian tweets
-
-    #attempt 2 failed
-
-    #attemp3 started at like 6am nov 28
-    # start_time = '2021-11-25T00:00:00Z'
-    # end_time = '2021-11-25T12:00:00Z'
-    #ended at 12:27pm nov 28
-    # Tweets pulled 29171
-    # possibly canadian tweets
-
-    start_time = '2021-11-25T12:00:00Z'
-    end_time = '2021-11-26T00:00:00Z'
+    start_time = '2021-11-26T00:00:00Z'
+    end_time = '2021-11-26T08:00:00Z'
     sample_every_n_minutes = 8
     num_tweets_collected_per_batch = 60
 
