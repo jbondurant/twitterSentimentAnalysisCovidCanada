@@ -175,14 +175,14 @@ def main():
     #edit 2: granulariity is wrong, since the posting time of the whole world likely doesn't reflect the posting times of canadians
 
     #3 day span
-    #start time is '2021-11-24T00:00:00Z'
-    #end time is '2021-11-27T00:00:00Z'
+    #start time is '2021-11-26T00:00:00Z'
+    #end time is '2021-11-29T00:00:00Z'
 
 
     start_time = '2021-11-26T00:00:00Z'
-    end_time = '2021-11-26T08:00:00Z'
+    end_time = '2021-11-26T12:00:00Z'
     sample_every_n_minutes = 8
-    num_tweets_collected_per_batch = 60
+    num_tweets_collected_per_batch = 50
 
     #TODO make this valid for multiple OS
     tweets_path = '../data/sample' + str(num_tweets_collected_per_batch) + 'every' + str(sample_every_n_minutes) + 'min/tweets/' + start_time + '-to-' + end_time  + '.json'
