@@ -35,9 +35,37 @@ def get_californian_cities_exact():
     cali_cities = set(cali_cities_list)
     return cali_cities
 
+def all_wrong_locations_sub():
+    bad_loc = get_bad_locations_sub()
+    neb_loc = get_nebraska_cities_sub()
+    cali_loc = get_californian_cities_sub()
+    all_wrong_sub = set.union(bad_loc, neb_loc, cali_loc)
+    return all_wrong_sub
+
+
+def get_bad_locations_sub():
+    popular_list = ['on earth', 'on the couch', 'yt channel', 'notifications on', 'on both sides', 'ca usa', 'ca uk', 'us canada', 'and canada']
+    popular_list += ['on my', 'on a', 'on an', 'on the', 'on your', 'tweets on', 'can travel', 'lawse angelees', 'earth between mexico', 'northern ireland']
+    popular_list += ['walton on thames', 'ochten', 'you can', 'qc ncr', 'Canada   US', 'Freedom Bunker']
+    popular = set(popular_list)
+    return popular
+
+def get_nebraska_cities_sub():
+    popular = ['auburn', 'fairbury', 'ohio']
+    cities_1_10 = ['omaha', 'lincoln', 'bellevue', 'grand island', 'kearney', 'fremont', 'hastings', 'norfolk', 'papillion']
+    #skipped 10 colombus
+    cities_11_20 = ['north platte', 'la vista', 'scottsbluff', 'south sioux city', 'beatrice', 'gering', 'alliance', 'blair']
+    locations_list = popular + cities_1_10 + cities_11_20
+    locations = set(locations_list)
+    return locations
+    #skipped 16 lexington and 19 york
+
 def get_californian_cities_sub():
     #I don't think i can put county here as of now. perhaps people say stuff like york county, ontario
-    popular = ['hollywood', 'beverly hills', 'stanford', 'lake forest', 'newport beach', 'palm springs', 'malibu', 'laguna beach']
+    popular = ['hollywood', 'beverly hills', 'stanford', 'lake forest', 'newport beach', 'sacramento', 'bermuda dunes', 'laguna niguel', 'buena park', 'galt', 'sonora']
+    popular += ['palm springs', 'malibu', 'laguna beach', 'palm_beach', 'hermosa beach', 'manhattan beach', 'daly city', 'prunedale', 'cathedral city', 'chino hills']
+    popular += ['hesperia', 'whittier', 'sonoma county', 'pacific palisades', 'half moon bay', 'north vallejo', 'palo alto', 'davis', 'encinitas', 'chesapeake', 'silicon valley']
+    popular += ['palm desert', 'santee', 'sierra madre', 'menifee', 'simi valley', 'marina del rey', 'moreno valley', 'buena park', 'citrus heights', 'hmb ca', 'valencia']
 
     cities_1_10 = ['los angeles', 'fresno', 'long beach', 'oakland', 'bakersfield', 'anaheim']
     cities_11_20 = ['stockton', 'riverside', 'irvine', 'chula vista', 'fremont', 'modesto']
@@ -80,9 +108,9 @@ def is_tweet_canadian(tweet_loc):
     if tweet_loc == None:
         return False
     tweet_loc = tweet_loc.lower()
-    print(tweet_loc)
+    #print(tweet_loc)
     tweet_loc = unidecode(tweet_loc)
-    print(tweet_loc)
+    #print(tweet_loc)
     clean_tweet_loc = re.sub("[^0-9a-zA-Z]+", " ", tweet_loc)#for things like terre-neuve
     tweet_loc_words = clean_tweet_loc.split()
     can_locs_sub = get_canadian_locations_sub()
@@ -90,8 +118,8 @@ def is_tweet_canadian(tweet_loc):
     cali_cities_exact = get_californian_cities_exact()
     cali_cities_sub = get_californian_cities_sub()
 
-    for cali_city_sub in cali_cities_sub:
-        if cali_city_sub in clean_tweet_loc:
+    for wrong_loc_sub in all_wrong_locations_sub():
+        if wrong_loc_sub in clean_tweet_loc:
             return False
     for cali_cities_exact in cali_cities_exact:
         for tweet_word in tweet_loc_words:
@@ -108,7 +136,7 @@ def is_tweet_canadian(tweet_loc):
     return False
 
 def main():
-    tweet_loc = 'London ON santa abc'
+    tweet_loc = 'quebec'
     print(is_tweet_canadian(tweet_loc))
 
 
