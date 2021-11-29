@@ -3,7 +3,9 @@ from get_tweets import read_json
 import pandas as pd
 
 def main():
-    tweets_path = '../data/sample60every8min/tweets/2021-11-24T00:00:00Z-to-2021-11-25T00:00:00Z.json'
+
+    tweets_path = '../data/sample50every8min/tweets/2021-11-25T12:00:00Z-to-2021-11-26T00:00:00Z.json'
+    csv_tweets_path = '../data/sample50every8min/csvTweets/2021-11-25T12:00:00Z-to-2021-11-26T00:00:00Z.csv'
 
     tweets_json = read_json(tweets_path)
 
@@ -25,7 +27,8 @@ def main():
         tweets_clean.append(tweets_content_clean)
 
     df = pd.DataFrame(tweets_clean)
-    df.to_csv('../data/sample60every8min/csvTweets/2021-11-24T00:00:00Z-to-2021-11-25T00:00:00Z.csv')
+
+    df.to_csv(csv_tweets_path)
     print(df)
 
 
