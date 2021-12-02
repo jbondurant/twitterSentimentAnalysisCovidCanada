@@ -35,6 +35,14 @@ def all_wrong_locations_sub():
     return all_wrong_sub
 
 
+def preprocessed_bad_locations_exact_match():
+    bad_locations_list = []
+    with open("../data/wrongLocations/bad_locations.txt", "r") as f:
+        bad_locations_list = f.readlines()
+    bad_locations_set = set(bad_locations_list)
+    return bad_locations_set
+
+
 def get_bad_locations_sub():
     popular_list = ['on earth', 'on the couch', 'yt channel', 'notifications on', 'on both sides', 'ca usa', 'ca uk', 'us canada', 'and canada']
     popular_list += ['on my', 'on a', 'on an', 'on the', 'on your', 'tweets on', 'can travel', 'lawse angelees', 'earth between mexico', 'northern ireland']
@@ -107,6 +115,11 @@ def get_canadian_locations_sub():
 def is_tweet_canadian(tweet_loc):
     if tweet_loc == None:
         return False
+
+    preprocessed_exact_wrong_locations = preprocessed_bad_locations_exact_match()
+    if tweet_loc in preprocessed_exact_wrong_locations:
+        return False
+
     tweet_loc = tweet_loc.lower()
     tweet_loc = unidecode(tweet_loc)
     clean_tweet_loc = re.sub("[^0-9a-zA-Z]+", " ", tweet_loc)#for things like terre-neuve
