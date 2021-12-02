@@ -40,23 +40,13 @@ def build_query_string(query_word_list):
     query_string = '('
     for query_word in query_list_fixed:
         query_string += query_word
-    #this doc explains following code parameters https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-query
-    #query_string += ') lang:en -is:retweet -is:reply -is:nullcast'
-    query_string += ') lang:en -is:retweet -is:reply'
+    query_string += ' OR #covid19) lang:en -is:retweet -is:reply'
     return query_string
 
 
-#mycourses mentions getting canadian tweets by timezone, but I don't think that's possible
-#we can't search for tweets by location without an academic account, which is for masters students and above
-#however we can possibly filter tweets by location after the search
-#in which case we want to get way more than 1000 tweets
-#this link might help https://stackoverflow.com/questions/36490085/how-to-get-twitter-users-location-with-tweepy
 def get_api_tweets(client, query_string, start_time, end_time, num_tweets_collected):
     if len(query_string) > 512:
         raise ValueError('Query length too long')
-    # dates can be changed, but must remain a span of 3 days
-
-    #starting with items = 110 to be gentle to api as I test the waters
 
     search_results_list = None
     if num_tweets_collected > 100:
@@ -74,7 +64,6 @@ def get_api_tweets(client, query_string, start_time, end_time, num_tweets_collec
     else:
         #keep this count line for future purposes
         #abc = client.get_recent_tweets_count(query=query_string, granularity = "day")
-        #abc2 = 1
         search_results = client.search_recent_tweets(query=query_string, expansions=["author_id", "geo.place_id"],
                                                       tweet_fields=[
                                                           "author_id", "created_at", "context_annotations",
@@ -98,16 +87,12 @@ def get_twitter_client(credentials_dict):
 
 
 def get_query_word_list():
-    covid_words = ['covid', 'coronavirus']#perhaps add pandemic
+    covid_words = ['covid', 'coronavirus']
     vaccine_words = ['vaccine', 'vaccination', 'vax']
     brand_words = ['pfizer', 'moderna', 'janssen', '"johnson and johnson"', '"johnson & johnson"']
     query_word_list = covid_words + vaccine_words + brand_words
     return query_word_list
-    # for the report we can explain that we are skipping astrazeneca since it's not really relevant in canada anymore
-    # we can also explain that we searched twitter manually and found
-    # that many people used the word vax, so we included it
-    #also, anti-vax is used a fair amount on twitter, but the api has - as a
-    #seperator, so those will be caught by the vax query
+
 
 def get_username(tweet_user, client):
     userMinimal = client.get_user(id=tweet_user)
@@ -135,7 +120,6 @@ def clean_api_tweets(api_tweets, client):
         tweet_lang = api_tweet.lang
         tweet_created_at = api_tweet.created_at
         tweet_public_metrics = api_tweet.public_metrics
-        #tweet_entities = api_tweet.entities
 
         clean_tweets[tweet_id] = {}
         clean_tweets[tweet_id]['text'] = tweet_text
@@ -145,7 +129,6 @@ def clean_api_tweets(api_tweets, client):
         clean_tweets[tweet_id]['user_location'] = tweet_user_location
         clean_tweets[tweet_id]['id'] = tweet_id
         clean_tweets[tweet_id]['public_metrics'] = tweet_public_metrics
-        #clean_tweets[tweet_id]['entities'] = tweet_entities
     return clean_tweets
 
 
@@ -158,31 +141,17 @@ def main():
     print(query_string)
     client = get_twitter_client(credentials_dict)
 
-
-
-    #current sampling approach problems
-    #approach has the disadantage perhaps of making tweets in off hours too (relatively) important, but you can't
-    #sample perfectly anyways
-    #this sample will possibly only collect tweets after 30 seconds of each minute, but that sample should be
-    #representative of the tweets between 0s and 30s of each minute
-
-    # honestly it would be amazing if I weighted my sample with the data from
-    # the method client.get_recent_tweets_count(query=query_string, granularity = "hour") since
-    #it would be imo a better sampling methodology which we can then write about in the report
-    #edit: that being said, the amount of canadian tweets will vary wildly, so you need to do like sample 10
-    #then if 1 of the tweets is canadian add it to tweets for timeframe, until you reach the weigthed
-    # quota of canadian tweets for that hour?
-    #edit 2: granulariity is wrong, since the posting time of the whole world likely doesn't reflect the posting times of canadians
-
     #3 day span
     #start time is '2021-11-26T00:00:00Z'
     #end time is '2021-11-29T00:00:00Z'
 
+    #started last batch nov 30 at like 11:25 ended at 2:25 predicted 170.2
+    #started last batch nov 30 5:56 estimated 54.25, done like 6:57
 
-    start_time = '2021-11-26T00:00:00Z'
-    end_time = '2021-11-26T12:00:00Z'
+    start_time = '2021-11-26T04:00:00Z'
+    end_time = '2021-11-26T10:00:00Z'
     sample_every_n_minutes = 8
-    num_tweets_collected_per_batch = 50
+    num_tweets_collected_per_batch = 70
 
     #TODO make this valid for multiple OS
     tweets_path = '../data/sample' + str(num_tweets_collected_per_batch) + 'every' + str(sample_every_n_minutes) + 'min/tweets/' + start_time + '-to-' + end_time  + '.json'
@@ -191,17 +160,16 @@ def main():
     span_minutes = get_span_minutes(start_time, end_time)
 
     num_sample_batches = int((span_minutes / sample_every_n_minutes) + 1)
-    print('num sample batches:\t' + str(num_sample_batches))
+    print('num sample batches:\t' + str(num_sample_batches -1))
     start_time_shift = 240  # this puts the start time 4 minutes before the end time
-    start_end_time_splits = span_to_splits(start_time, end_time, num_sample_batches, start_time_shift)
+    start_end_time_splits = span_to_splits(start_time, end_time, num_sample_batches, start_time_shift, True)
 
     all_tweets = {}
 
-
-    sleep_time_constant = 3 * num_tweets_collected_per_batch + 40
+    sleep_time_constant = 3 * num_tweets_collected_per_batch + 4
     print('sleep time constant:\t' + str(sleep_time_constant))
 
-    estimated_run_time_min = sleep_time_constant * num_sample_batches / 60
+    estimated_run_time_min = (sleep_time_constant * (num_sample_batches -1) / 60) * 1.00
     print('estimated run time min:\t' + str(estimated_run_time_min))
     num_batches_processed = 0
     for start_time, end_time in start_end_time_splits:
@@ -215,11 +183,6 @@ def main():
 
     write_tweets(all_tweets, tweets_path)
     write_locations(all_tweets, location_path)
-
-    #in report, we'll probably have to mention that we manually remove tweets about say Johnson and Johnson, or Pfizer
-    #that weren't about the vaccine
-
-
 
 
 if __name__ == '__main__':
