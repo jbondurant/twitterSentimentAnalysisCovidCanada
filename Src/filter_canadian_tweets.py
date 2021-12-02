@@ -35,10 +35,22 @@ def all_wrong_locations_sub():
     return all_wrong_sub
 
 
+def is_user_can(user):
+    bad_locations_users_list = []
+    with open("../data/wrongLocations/bad_locations_users.txt", "r") as f:
+        bad_locations_users_lines = f.readlines()
+        bad_locations_users_list = [line.replace("\n", "") for line in bad_locations_users_lines]
+    bad_locations_users_set = set(bad_locations_users_list)
+    if user in bad_locations_users_set:
+        return False
+    return True
+
+
 def preprocessed_bad_locations_exact_match():
     bad_locations_list = []
     with open("../data/wrongLocations/bad_locations.txt", "r") as f:
-        bad_locations_list = f.readlines()
+        bad_locations_lines = f.readlines()
+        bad_locations_list = [line.replace("\n", "") for line in bad_locations_lines]
     bad_locations_set = set(bad_locations_list)
     return bad_locations_set
 
@@ -146,7 +158,7 @@ def is_tweet_canadian(tweet_loc):
     return False
 
 def main():
-    tweet_loc = 'NL 🇳🇱'
+    tweet_loc = 'Mount Shasta, CA'
     print(is_tweet_canadian(tweet_loc))
 
 
