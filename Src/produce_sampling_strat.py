@@ -15,7 +15,7 @@ def get_span_minutes(start_time, end_time):
     return span_minutes
 
 #This method gives an initial shift of 2 minutes to the first sample
-def span_to_splits(start_time, end_time, num_samples, start_time_shift):
+def span_to_splits(start_time, end_time, num_samples, start_time_shift, skip_first):
 
     start_time_number = convert_time_to_int(start_time)
     end_time_number = convert_time_to_int(end_time)
@@ -27,6 +27,8 @@ def span_to_splits(start_time, end_time, num_samples, start_time_shift):
         end_split_number = round(start_time_number + i * step_size, 0)
         start_split_number = end_split_number - start_time_shift
         if i == 0:
+            if skip_first:
+                continue
             end_split_number += 240
             start_split_number += 240
         end_split_time = datetime.utcfromtimestamp(end_split_number)
@@ -44,12 +46,13 @@ def span_to_splits(start_time, end_time, num_samples, start_time_shift):
 
 def main():
     start_time = '2021-11-19T00:00:00Z'
-    end_time = '2021-11-22T00:00:00Z'
+    end_time = '2021-11-19T06:00:00Z'
     span_minutes = get_span_minutes(start_time, end_time)
     sample_every_n_minutes = 8
     num_sample_batches = int((span_minutes / sample_every_n_minutes) + 1)
+    #if skipFirst is true, don't do +1 above
     start_time_shift = 120 #this puts the start time 2 minutes before the end time
-    start_end_time_splits = span_to_splits(start_time, end_time, num_sample_batches, start_time_shift)
+    start_end_time_splits = span_to_splits(start_time, end_time, num_sample_batches, start_time_shift, True)
     x=1
 
 if __name__ == '__main__':
