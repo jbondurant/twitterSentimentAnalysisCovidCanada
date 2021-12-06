@@ -39,6 +39,9 @@ def main():
 
     df = pd.DataFrame(tweets_clean)
 
+    #df = df.drop_duplicates(subset=['text'])
+    #df = df.reset_index()
+
     df.to_csv(csv_tweets_path)
     #print(df)
     print(num_not_can)
