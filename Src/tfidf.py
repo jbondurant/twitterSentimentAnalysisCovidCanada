@@ -91,11 +91,14 @@ def idf ():
 
     #go through the filtered dictionary and check how many words appear in the data
     for text, topic in lst.items():
+        tweet_words_prev_seen = set()
         for j in text.split():
-            try:
-                dict[j] += 1
-            except:
-                dict[j] = 1
+            if j not in tweet_words_prev_seen:
+                try:
+                    dict[j] += 1
+                except:
+                    dict[j] = 1
+                tweet_words_prev_seen.add(j)
 
     # go through the dictionary again and calculate idf
     for word, count in dict.items():
