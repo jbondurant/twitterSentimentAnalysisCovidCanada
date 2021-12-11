@@ -9,7 +9,8 @@ import math
 # extract all the text from the csv and store in a list.
 def extract_text ():
     dict = {}
-    df = pd.read_csv("../Data/badTopics/fakeTopicToCalcTFIDF.csv");
+    df = pd.read_csv("../Data/annotatedTweets/annotated_complete_table_comp_598-sample2OfSize1000.csv");
+
 
     for idx, row in df.iterrows():
         dict[row["text"]] = row["topic"]
@@ -102,7 +103,7 @@ def idf ():
 
     # go through the dictionary again and calculate idf
     for word, count in dict.items():
-        res[word] = math.log(1000/count)
+        res[word] = math.log(1000/count, 10)
 
 
 
@@ -134,13 +135,20 @@ def tf_idf ( topic, thres):
     for (k, v), (k2, v2) in zip(tf_dict.items(), idf_dict.items()):
         tf_idf[k] = v*v2
 
-    return tf_idf
+    tf_idf = dict(sorted(tf_idf.items(), key=lambda item: -item[1]))
+    tf_idf_list = [(k, v) for k, v in tf_idf.items()]
+    tf_idf_top = tf_idf_list[:30]
+    return tf_idf_top
+
+topics = [1,2,3,4,5,6]
+min_threshold = 0
+for topic in topics:
+    print('topic:\t' + str(topic))
+    # print(idf())
+    print(tf(topic))
+    print(tf_idf(topic, min_threshold))
+    print('--------------------')
 
 
-
-
-print(idf())
-print(tf('Other'))
-print(tf_idf('Other',0))
 
 
