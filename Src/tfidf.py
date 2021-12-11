@@ -103,7 +103,7 @@ def idf ():
 
     # go through the dictionary again and calculate idf
     for word, count in dict.items():
-        res[word] = math.log(1000/count, 10)
+        res[word] = math.log(1000/count)
 
 
 
@@ -123,12 +123,12 @@ def threshold (dict, threshold):
 
 
 
-def tf_idf ( topic, thres):
+def tf_idf (topic, thres):
 
     tf_dict = tf(topic)
     tf_dict = threshold(tf_dict,thres)
     idf_dict = idf()
-    idf_dict = threshold(idf_dict, thres)
+    #idf_dict = threshold(idf_dict, thres)
 
     tf_idf = {}
 
@@ -141,7 +141,7 @@ def tf_idf ( topic, thres):
     return tf_idf_top
 
 topics = [1,2,3,4,5,6]
-min_threshold = 0
+min_threshold = 5
 for topic in topics:
     print('topic:\t' + str(topic))
     # print(idf())
