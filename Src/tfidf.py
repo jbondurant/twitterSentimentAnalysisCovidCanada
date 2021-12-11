@@ -5,17 +5,38 @@ import re
 import os
 import math
 
+file_path = "../Data/annotatedTweets/annotated_complete_table_comp_598-sample2OfSize1000.csv"
 
 # extract all the text from the csv and store in a list.
 def extract_text ():
     dict = {}
-    df = pd.read_csv("../Data/annotatedTweets/annotated_complete_table_comp_598-sample2OfSize1000.csv");
-
+    df = pd.read_csv(file_path);
 
     for idx, row in df.iterrows():
         dict[row["text"]] = row["topic"]
 
     return dict
+
+# extract all the text from the csv and store in a list.
+def under_threshold_words(min_freq):
+    dict = {}
+    lst = extract_text()
+    lst = remove_punct(lst)
+    # go through each element and check if each vacabs have been stored in the dictionary.
+
+    for text, topic in lst.items():
+        for i in text.split():
+            try:
+                dict[i] += 1
+            except:
+                dict[i] = 1
+    infrequent_words = set()
+    for word, freq in dict.items():
+        if freq < 5:
+            infrequent_words.add(word)
+
+    return infrequent_words
+
 
 
 
@@ -103,7 +124,7 @@ def idf ():
 
     # go through the dictionary again and calculate idf
     for word, count in dict.items():
-        res[word] = math.log(1000/count)
+        res[word] = math.log(1000/count, 10)
 
 
 
@@ -111,9 +132,10 @@ def idf ():
 
 # eliminating the data that shows up less than a certain threshold.
 def threshold (dict, threshold):
+    words_under_thresh = under_threshold_words(threshold)
     new_dict = {}
     for text, topic in dict.items():
-        if topic > threshold:
+        if text not in words_under_thresh:
             new_dict[text] = topic
         else:
             pass
@@ -141,7 +163,7 @@ def tf_idf (topic, thres):
     return tf_idf_top
 
 topics = [1,2,3,4,5,6]
-min_threshold = 5
+min_threshold = 1
 for topic in topics:
     print('topic:\t' + str(topic))
     # print(idf())
