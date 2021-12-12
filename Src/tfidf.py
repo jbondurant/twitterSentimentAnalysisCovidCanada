@@ -5,8 +5,19 @@ import re
 import os
 import math
 
+
+from nltk.stem import PorterStemmer
+from nltk.corpus import wordnet as wn
+from nltk.stem.wordnet import WordNetLemmatizer
+
+
+ps = PorterStemmer()
+lemma_function = WordNetLemmatizer()
+
 file_path = "../Data/annotatedTweets/combo_annotated_complete_table_comp_598-sample2OfSize1000.csv"
-is_combo = True
+is_combo = False
+is_stem = False
+is_lemma = False #this might required using python in your command line to download the appropriate files
 
 # extract all the text from the csv and store in a list.
 def extract_text ():
@@ -75,7 +86,12 @@ def remove_punct(dict):
         lst = []
         for i in text.split():
             if i.lower() not in stop_word:
-                lst.append(i.lower())
+                if is_stem:
+                    lst.append(ps.stem(i.lower()))
+                elif is_lemma:
+                    lst.append(lemma_function.lemmatize(i.lower()))
+                else:
+                    lst.append(i.lower())
                 s = ' '.join(lst)
 
         res[s]= topic
@@ -195,7 +211,7 @@ def tf_idf (topic, thres):
 
 topics = [1,2,3,4,5,6]
 min_threshold = 5
-is_unique = False
+is_unique = True
 #is_combo is at the top of this file
 
 if is_combo:
