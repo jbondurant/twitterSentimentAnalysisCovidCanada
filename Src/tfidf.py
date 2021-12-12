@@ -5,7 +5,8 @@ import re
 import os
 import math
 
-file_path = "../Data/annotatedTweets/annotated_complete_table_comp_598-sample2OfSize1000.csv"
+file_path = "../Data/annotatedTweets/combo_annotated_complete_table_comp_598-sample2OfSize1000.csv"
+is_combo = True
 
 # extract all the text from the csv and store in a list.
 def extract_text ():
@@ -13,7 +14,10 @@ def extract_text ():
     df = pd.read_csv(file_path);
 
     for idx, row in df.iterrows():
-        dict[row["text"]] = row["topic"]
+        if is_combo:
+            dict[row["text"]] = row["combo"]
+        else:
+            dict[row["text"]] = row["topic"]
 
     return dict
 
@@ -192,6 +196,15 @@ def tf_idf (topic, thres):
 topics = [1,2,3,4,5,6]
 min_threshold = 5
 is_unique = False
+#is_combo is at the top of this file
+
+if is_combo:
+    topics = ['1Positive', '1Neutral', '1Negative',
+              '2Positive', '2Neutral', '2Negative',
+              '3Positive', '3Neutral', '3Negative',
+              '4Positive', '4Neutral', '4Negative',
+              '5Positive', '5Neutral', '5Negative',
+              '6Positive', '6Neutral', '6Negative',]
 
 all_tfidfs = {}
 for topic in topics:
@@ -224,8 +237,8 @@ for topic, tfidf in all_tfidfs.items():
     print('topic:\t' + str(topic))
     # print(idf())
     #print(tf(topic))
-    tfidf_top_30 = tfidf[:15]
-    print(tfidf_top_30)
+    tfidf_top_25 = tfidf[:25]
+    print(tfidf_top_25)
     print('--------------------')
 
 
