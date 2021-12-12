@@ -171,6 +171,7 @@ def threshold (dict, threshold):
 
 def tf_idf (topic, thres):
 
+
     tf_dict = tf(topic)
     tf_dict = threshold(tf_dict,thres)
     idf_dict = idf()
@@ -183,16 +184,48 @@ def tf_idf (topic, thres):
 
     tf_idf = dict(sorted(tf_idf.items(), key=lambda item: -item[1]))
     tf_idf_list = [(k, v) for k, v in tf_idf.items()]
-    tf_idf_top = tf_idf_list[:30]
-    return tf_idf_top
+
+
+
+    return tf_idf_list
 
 topics = [1,2,3,4,5,6]
 min_threshold = 1
+is_unique = True
+
+all_tfidfs = {}
 for topic in topics:
+    all_tfidfs[topic] = tf_idf(topic, min_threshold)
+
+if is_unique:
+    word_max_scores = {}
+    word_max_topic = {}
+    for topic, tfidf in all_tfidfs.items():
+        for word, score in tfidf:
+            current_max = word_max_scores.get(word, 0.0)
+            if score > current_max:
+                word_max_scores[word] = score
+                word_max_topic[word] = topic
+
+
+    all_tfidfs_unique = {}
+    for topic in topics:
+        all_tfidfs_unique[topic] = []
+
+    for topic, tfidf in all_tfidfs.items():
+        for word, score in tfidf:
+            if word_max_topic[word] == topic:
+                all_tfidfs_unique[topic].append((word, score))
+
+    all_tfidfs = all_tfidfs_unique
+    a=1
+
+for topic, tfidf in all_tfidfs.items():
     print('topic:\t' + str(topic))
     # print(idf())
-    print(tf(topic))
-    print(tf_idf(topic, min_threshold))
+    #print(tf(topic))
+    tfidf_top_30 = tfidf[:15]
+    print(tfidf_top_30)
     print('--------------------')
 
 
