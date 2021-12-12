@@ -190,8 +190,8 @@ def tf_idf (topic, thres):
     return tf_idf_list
 
 topics = [1,2,3,4,5,6]
-min_threshold = 1
-is_unique = True
+min_threshold = 5
+is_unique = False
 
 all_tfidfs = {}
 for topic in topics:
