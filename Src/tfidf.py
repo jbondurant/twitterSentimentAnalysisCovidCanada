@@ -82,6 +82,26 @@ def remove_punct(dict):
 
 
 
+def num_words_each_topic():
+    num_words_in_topic = {}
+    lst = extract_text()
+    lst = remove_punct(lst)
+    all_topics = set()
+    for text, topic in lst.items():
+        all_topics.add(topic)
+    for topic in all_topics:
+        num_words_in_topic[topic] = 0
+
+    for t in all_topics:
+        for text, topic in lst.items():
+            # check the topic
+            if topic == t:
+                num_words_in_topic[t] += len(text.split())
+            else:
+                pass
+    return num_words_in_topic
+
+
 def tf (t):
     dict = {}
     lst = extract_text()
@@ -99,6 +119,10 @@ def tf (t):
         else:
             pass
 
+    num_words_in_topic = num_words_each_topic()[t]
+
+    for word in dict:
+        dict[word] = float(dict[word] / num_words_in_topic)
 
     return dict
 
