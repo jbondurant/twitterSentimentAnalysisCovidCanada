@@ -87,9 +87,105 @@ def num_tweets_topic_sentiment_combo():
     return dict
 
 
+def percentage_of_sentiment_within_topic():
+    dict_num = num_tweets_category()
+    dict_each_sentiment = num_tweets_topic_sentiment_combo()
+    lst = []
+    values1 = {}
+    values2 = {}
+    values3 = {}
+    values4 = {}
+    values5 = {}
+    values6 = {}
+    res = {}
+
+    for i in dict_num.values():
+        lst.append(i)
+
+    for key,value in dict_each_sentiment.items():
+
+        if '1 and Positive' == key:
+            values1['Positive'] = (int(value)/int(lst[0]))
+            res['topic 1'] = values1
+
+        elif '1 and Negative' == key:
+            values1['Negative'] = (int(value) / int(lst[0]))
+            res['topic 1'] = values1
+
+        elif '1 and Neutral' == key:
+            values1['Neutral'] = (int(value) / int(lst[0]))
+            res['topic 1'] = values1
+
+        elif '2 and Positive' == key:
+            values2['Positive'] = (int(value)/int(lst[1]))
+            res['topic 2'] = values2
+
+        elif '2 and Negative' == key:
+            values2['Negative'] = (int(value) / int(lst[1]))
+            res['topic 2'] = values2
+
+        elif '2 and Neutral' == key:
+            values3['Neutral'] = (int(value) / int(lst[1]))
+            res['topic 2'] = values3
+
+        elif '3 and Positive' ==  key:
+            values3['Positive']=(int(value)/int(lst[2]))
+            res['topic 3'] = values3
+
+        elif '3 and Negative' == key:
+            values3['Negative'] = (int(value) / int(lst[2]))
+            res['topic 3'] = values3
+
+        elif '3 and Neutral' == key:
+            values3['Neutral'] = (int(value) / int(lst[2]))
+            res['topic 3'] = values3
+
+        elif '4 and Positive' == key:
+            values4['Positive']=(int(value)/int(lst[3]))
+            res['topic 4'] = values4
+
+        elif '4 and Negative' == key:
+            values4['Negative'] = (int(value) / int(lst[3]))
+            res['topic 4'] = values4
+
+        elif '4 and Neutral' == key:
+            values4['Neutral'] = (int(value) / int(lst[3]))
+            res['topic 4'] = values4
+
+        elif '5 and Positive' == key:
+            values5['Positive']=(int(value)/int(lst[4]))
+            res['topic 5'] = values5
+
+        elif '5 and Negative' == key:
+            values5['Negative'] = (int(value) / int(lst[4]))
+            res['topic 5'] = values4
+
+        elif '5 and Neutral' == key:
+            values5['Neutral'] = (int(value) / int(lst[4]))
+            res['topic 5'] = values5
+
+        elif '6 and Positive' == key:
+            values6['Positive']=(int(value)/int(lst[5]))
+            res['topic 6'] = values6
+
+        elif '6 and Negative' == key:
+            values6['Negative'] = (int(value) / int(lst[5]))
+            res['topic 6'] = values6
+
+        elif '6 and Neutral' == key:
+            values6['Neutral'] = (int(value) / int(lst[5]))
+            res['topic 6'] = values6
+
+
+
+
+    return res
+
+
 
 
 
 print(num_tweets_category())
 print(num_tweets_sentiments())
 print(num_tweets_topic_sentiment_combo())
+print(percentage_of_sentiment_within_topic())
