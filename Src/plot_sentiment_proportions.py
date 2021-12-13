@@ -11,6 +11,8 @@ category_names = ['Negative', 'Neutral',
 #line_styles = ['-', '--', ':']
 hatches = ['xxx', '...', '***']
 
+#we should really rename the labels to reflect a short name for each topic
+#i.e. replacing topic 6 with other
 results = {
     'Topic 1': [35.555555555555557, 55.55555555555556, 8.888888888888889],
     'Topic 2': [23.404255319148937, 75, 1.5957446808510637],
