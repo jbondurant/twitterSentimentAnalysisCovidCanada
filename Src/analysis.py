@@ -125,7 +125,7 @@ def percentage_of_sentiment_within_topic():
             res['topic 2'] = values2
 
         elif '2 and Neutral' == key:
-            values3['Neutral'] = (int(value) / int(lst[1]))
+            values2['Neutral'] = (int(value) / int(lst[1]))
             res['topic 2'] = values2
 
         elif '3 and Positive' ==  key:
